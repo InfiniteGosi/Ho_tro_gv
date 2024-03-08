@@ -44,6 +44,7 @@ namespace Hỗ_Trợ_GV
                 {
                     MessageBox.Show("Login successfully");
                     MainForm mainForm = new MainForm();
+                    this.Hide();
                     mainForm.ShowDialog();
                 }
                 else
