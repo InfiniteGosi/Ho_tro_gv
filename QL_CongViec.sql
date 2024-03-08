@@ -45,3 +45,5 @@ CREATE TABLE MonHocDay
   FOREIGN KEY (TenDangNhap) REFERENCES TaiKhoan(TenDangNhap),
   FOREIGN KEY (MaMon) REFERENCES MonHoc(MaMon)
 );
+
+delete from TaiKhoan where TenDangNhap = 'khangho150'

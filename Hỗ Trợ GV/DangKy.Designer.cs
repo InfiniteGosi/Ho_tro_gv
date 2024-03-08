@@ -181,9 +181,9 @@ namespace Hỗ_Trợ_GV
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(25, 302);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 19);
+            this.label1.Size = new System.Drawing.Size(138, 19);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Nhập lại mật khẩu";
+            this.label1.Text = "Xác minh mật khẩu";
             // 
             // TB_Pass
             // 
@@ -242,10 +242,6 @@ namespace Hỗ_Trợ_GV
             this.LB_Email.Size = new System.Drawing.Size(49, 19);
             this.LB_Email.TabIndex = 0;
             this.LB_Email.Text = "Email";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // DangKy
             // 
