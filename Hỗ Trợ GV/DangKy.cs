@@ -51,10 +51,21 @@ namespace Hỗ_Trợ_GV
             return String.IsNullOrEmpty(confirmation);
         }
 
-        int vCode = 1000;
+        public bool CheckEmptyEmail(String email)
+        {
+            return String.IsNullOrEmpty(email);
+        }
+
         int num = RandomCode();
+        bool allInformationFilled = false;
         private void btn_SendVerify_Click(object sender, EventArgs e)
         {
+            if (CheckEmptyEmail(TB_NhapEmail.Text))
+            {
+                MessageBox.Show("Vui lòng không bỏ trống trường Email");
+                TB_NhapEmail.Focus();
+                return;
+            }
             if (!CheckValidEmail(TB_NhapEmail.Text))
             {
                 MessageBox.Show("Vui lòng nhập đúng định dạng Email");
@@ -63,19 +74,19 @@ namespace Hỗ_Trợ_GV
             }
             if (CheckEmptyPassword(TB_Pass.Text))
             {
-                MessageBox.Show("Vui lòng nhập mật khẩu");
+                MessageBox.Show("Vui lòng không bỏ trống trường mật khẩu");
                 TB_Pass.Focus();
                 return;
             }
             if (CheckEmptyConfirmationPassword(TB_PassVerify.Text))
             {
-                MessageBox.Show("Vui lòng nhập lại mật khẩu");
+                MessageBox.Show("Vui lòng xác minh mật khẩu");
                 TB_PassVerify.Focus();
                 return;
             }
             if (!CheckIdenticalPassword(TB_Pass.Text, TB_PassVerify.Text))
             {
-                MessageBox.Show("Vui lòng nhập lại mật khẩu khớp với mật khẩu đã nhập");
+                MessageBox.Show("Vui lòng nhập lại mật khẩu xác minh khớp với mật khẩu đã nhập");
                 TB_PassVerify.Focus();
                 return;
             }
@@ -87,7 +98,7 @@ namespace Hỗ_Trợ_GV
             MailMessage message = new MailMessage();
             message.To.Add(to);
             message.From = new MailAddress(from);
-            message.Subject = "Your Verification Code:" + num.ToString();
+            message.Subject = "Mã xác nhận của bạn là: " + num.ToString();
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");
             smtp.UseDefaultCredentials = false;
             smtp.EnableSsl = true;
@@ -97,19 +108,29 @@ namespace Hỗ_Trợ_GV
             try
             {
                 smtp.Send(message);
-                MessageBox.Show("Verification Code successful", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đã gửi thành công mã xác nhận, vui lòng kiểm tra Email của bạn", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 btn_Register.Enabled = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error sending verification code: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Có lỗi khi gửi mã xác nhận: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } 
-
+            allInformationFilled = true;
         }
 
+        // Lấy trạng thái đăng ký thành công để refresh lại trang đăng nhập
+        private static bool registerBtnClicked = false;
+        public static bool getRegisterBtnClicked()
+        {
+            return registerBtnClicked;
+        }
         private void btn_Register_Click(object sender, EventArgs e)
         {
-
+            if (!allInformationFilled) 
+            {
+                MessageBox.Show("Vui lòng nhập thông tin để đăng ký tài khoản");
+                return;
+            }
             SqlCommand cmd;
             SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True");
             conn.Open();
@@ -119,23 +140,10 @@ namespace Hỗ_Trợ_GV
             {
                 cmd = new SqlCommand("insert into TaiKhoan values('" + tenDangNhap + "','" + TB_Pass.Text + "')", conn);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Successfully Register");
-                DangNhap login = new DangNhap();
-                login.ShowDialog();
+                MessageBox.Show("Đã đăng ký thành công tài khoản, vui lòng quay trở lại trang đăng nhập");
+                registerBtnClicked = true;
             }
-
             conn.Close();
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            vCode += 10;
-            if (vCode == 9999)
-            {
-                vCode = 1000;
-            }
-        }
-
-        
     }
 }

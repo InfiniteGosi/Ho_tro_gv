@@ -22,6 +22,11 @@ namespace Hỗ_Trợ_GV
         {
             DangKy dk = new DangKy();
             dk.ShowDialog();
+            // Khi đăng ký thành công sẽ refresh lại trang đăng nhập
+            if (DangKy.getRegisterBtnClicked())
+            {
+                this.Refresh();
+            }
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
