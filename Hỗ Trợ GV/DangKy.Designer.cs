@@ -81,7 +81,7 @@ namespace Hỗ_Trợ_GV
             this.btn_SendVerify.Name = "btn_SendVerify";
             this.btn_SendVerify.Size = new System.Drawing.Size(100, 28);
             this.btn_SendVerify.TabIndex = 12;
-            this.btn_SendVerify.Text = "Send";
+            this.btn_SendVerify.Text = "Gửi";
             this.btn_SendVerify.UseVisualStyleBackColor = true;
             this.btn_SendVerify.Click += new System.EventHandler(this.btn_SendVerify_Click);
             // 
@@ -90,11 +90,11 @@ namespace Hỗ_Trợ_GV
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(153, 12);
+            this.label4.Location = new System.Drawing.Point(107, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 33);
+            this.label4.Size = new System.Drawing.Size(239, 33);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Register Form";
+            this.label4.Text = "TRANG ĐĂNG KÝ";
             // 
             // btn_Register
             // 
@@ -105,7 +105,7 @@ namespace Hỗ_Trợ_GV
             this.btn_Register.Name = "btn_Register";
             this.btn_Register.Size = new System.Drawing.Size(181, 78);
             this.btn_Register.TabIndex = 10;
-            this.btn_Register.Text = "REGISTER";
+            this.btn_Register.Text = "ĐĂNG KÝ";
             this.btn_Register.UseVisualStyleBackColor = true;
             this.btn_Register.Click += new System.EventHandler(this.btn_Register_Click);
             // 
@@ -181,9 +181,9 @@ namespace Hỗ_Trợ_GV
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(25, 302);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 19);
+            this.label1.Size = new System.Drawing.Size(129, 19);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Enter Password";
+            this.label1.Text = "Nhập lại mật khẩu";
             // 
             // TB_Pass
             // 
@@ -206,9 +206,9 @@ namespace Hỗ_Trợ_GV
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(25, 185);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 19);
+            this.label2.Size = new System.Drawing.Size(71, 19);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Password";
+            this.label2.Text = "Mật khẩu";
             // 
             // PN_Email
             // 

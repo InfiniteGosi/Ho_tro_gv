@@ -31,16 +31,54 @@ namespace Hỗ_Trợ_GV
             Regex reg = new Regex(@"\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*");
             if (!reg.IsMatch(email))
             {
-                MessageBox.Show("Invalid Email");
-                TB_NhapEmail.Focus();
                 return false;
             }
             return true;
         }
+
+        public bool CheckIdenticalPassword(String password, String confirmation)
+        {
+            return password.Equals(confirmation);
+        }
+
+        public bool CheckEmptyPassword(String password)
+        {
+            return String.IsNullOrEmpty(password);
+        }
+
+        public bool CheckEmptyConfirmationPassword(String confirmation) 
+        { 
+            return String.IsNullOrEmpty(confirmation);
+        }
+
         int vCode = 1000;
         int num = RandomCode();
         private void btn_SendVerify_Click(object sender, EventArgs e)
         {
+            if (!CheckValidEmail(TB_NhapEmail.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đúng định dạng Email");
+                TB_NhapEmail.Focus();
+                return;
+            }
+            if (CheckEmptyPassword(TB_Pass.Text))
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu");
+                TB_Pass.Focus();
+                return;
+            }
+            if (CheckEmptyConfirmationPassword(TB_PassVerify.Text))
+            {
+                MessageBox.Show("Vui lòng nhập lại mật khẩu");
+                TB_PassVerify.Focus();
+                return;
+            }
+            if (!CheckIdenticalPassword(TB_Pass.Text, TB_PassVerify.Text))
+            {
+                MessageBox.Show("Vui lòng nhập lại mật khẩu khớp với mật khẩu đã nhập");
+                TB_PassVerify.Focus();
+                return;
+            }
             timer1.Stop();  
             string to, from, pass;
             to = TB_NhapEmail.Text;
@@ -71,21 +109,19 @@ namespace Hỗ_Trợ_GV
 
         private void btn_Register_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand();
+
+            SqlCommand cmd;
             SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True");
             conn.Open();
-            if (CheckValidEmail(TB_NhapEmail.Text))
+            MailAddress addr = new MailAddress(TB_NhapEmail.Text);
+            string tenDangNhap = addr.User;
+            if (TB_Code.Text.Equals(num.ToString()))
             {
-                MailAddress addr = new MailAddress(TB_NhapEmail.Text);
-                string tenDangNhap = addr.User;
-                if (TB_Code.Text.Equals(num.ToString()))
-                {
-                    cmd = new SqlCommand("insert into TaiKhoan values('" + tenDangNhap + "','" + TB_Pass.Text + "')", conn);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Successfully Register");
-                    DangNhap login = new DangNhap();
-                    login.ShowDialog();
-                }
+                cmd = new SqlCommand("insert into TaiKhoan values('" + tenDangNhap + "','" + TB_Pass.Text + "')", conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Successfully Register");
+                DangNhap login = new DangNhap();
+                login.ShowDialog();
             }
 
             conn.Close();
