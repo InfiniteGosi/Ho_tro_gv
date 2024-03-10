@@ -42,20 +42,20 @@ namespace Hỗ_Trợ_GV
                 SqlDataReader data = cmd.ExecuteReader();
                 if (data.Read() == true)
                 {
-                    MessageBox.Show("Login successfully");
+                    MessageBox.Show("Đăng nhập thành công");
                     MainForm mainForm = new MainForm();
                     this.Hide();
                     mainForm.ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show("Failed to login");
+                    MessageBox.Show("Đăng nhập thất bại");
                 }
                 conn.Close();
             }
             catch (Exception)
             {
-                throw new Exception("Connection Error");
+                throw new Exception("Kết nối thất bại");
             }
         }
 
