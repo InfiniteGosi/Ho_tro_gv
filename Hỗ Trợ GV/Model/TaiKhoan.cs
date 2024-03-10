@@ -8,7 +8,16 @@ namespace Hỗ_Trợ_GV.Model
 {
     public class TaiKhoan
     {
-        public String TenDangNhap { get; set; }
-        public String MatKhau { get; set; }
+        private string tenDangNhap;
+        private string matKhau;
+        public String TenDangNhap { 
+            get { return tenDangNhap; } 
+            set {  tenDangNhap = value; }
+        }
+        public String MatKhau 
+        { 
+            get { return matKhau; }
+            set { matKhau = value; }
+        }
     }
 }

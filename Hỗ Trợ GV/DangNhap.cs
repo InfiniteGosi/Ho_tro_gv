@@ -44,7 +44,6 @@ namespace Hỗ_Trợ_GV
                 {
                     MessageBox.Show("Đăng nhập thành công");
                     MainForm mainForm = new MainForm();
-                    this.Hide();
                     mainForm.ShowDialog();
                 }
                 else
