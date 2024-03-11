@@ -105,7 +105,7 @@
             this.label3.ForeColor = System.Drawing.Color.Coral;
             this.label3.Location = new System.Drawing.Point(108, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(648, 52);
+            this.label3.Size = new System.Drawing.Size(629, 51);
             this.label3.TabIndex = 6;
             this.label3.Text = "CÔNG CỤ HỖ TRỢ GIÁO VIÊN";
             // 
@@ -135,6 +135,7 @@
             this.Controls.Add(this.tb_Ten);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.ResumeLayout(false);
             this.PerformLayout();

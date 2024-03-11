@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hỗ_Trợ_GV.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,11 @@ namespace Hỗ_Trợ_GV
         private void bt_DangXuat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.Text = String.Format("Hello");
         }
     }
 }

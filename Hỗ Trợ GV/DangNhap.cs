@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hỗ_Trợ_GV.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,7 +29,7 @@ namespace Hỗ_Trợ_GV
                 this.Refresh();
             }
         }
-
+        private TaiKhoan taiKhoan;
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True");
@@ -40,8 +41,10 @@ namespace Hỗ_Trợ_GV
                 string sql = "select * from Taikhoan where TenDangNhap = '" + tk + "' and Matkhau = '" + mk + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataReader data = cmd.ExecuteReader();
+                
                 if (data.Read() == true)
                 {
+                    taiKhoan = new TaiKhoan(tk, mk);
                     MessageBox.Show("Đăng nhập thành công");
                     MainForm mainForm = new MainForm();
                     mainForm.ShowDialog();
