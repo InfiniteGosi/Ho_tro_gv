@@ -22,10 +22,5 @@ namespace Hỗ_Trợ_GV
         {
             this.Close();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            label1.Text = String.Format("Hello");
-        }
     }
 }
