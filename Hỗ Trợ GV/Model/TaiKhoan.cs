@@ -19,5 +19,10 @@ namespace Hỗ_Trợ_GV.Model
             get { return matKhau; }
             set { matKhau = value; }
         }
+        public TaiKhoan(string tenDangNhap, string matKhau)
+        {
+            this.tenDangNhap = tenDangNhap ;
+            this.matKhau = matKhau ;
+        }
     }
 }
