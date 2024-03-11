@@ -40,7 +40,7 @@
             this.bt_DangXuat.Name = "bt_DangXuat";
             this.bt_DangXuat.Size = new System.Drawing.Size(125, 36);
             this.bt_DangXuat.TabIndex = 0;
-            this.bt_DangXuat.Text = "Đăng";
+            this.bt_DangXuat.Text = "Đăng nhập";
             this.bt_DangXuat.UseVisualStyleBackColor = true;
             this.bt_DangXuat.Click += new System.EventHandler(this.bt_DangXuat_Click);
             // 
