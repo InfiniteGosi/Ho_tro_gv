@@ -58,6 +58,21 @@ namespace Hỗ_Trợ_GV
 
         int num = RandomCode();
         bool allInformationFilled = false;
+        private bool CheckEmailAlreadyExists(string email)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True");
+            conn.Open();
+            MailAddress addr = new MailAddress(email);
+            string tenDangNhap = addr.User;
+            string sql = "select * from Taikhoan where TenDangNhap = '" + tenDangNhap + "'";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader data = cmd.ExecuteReader();
+            if (data.Read() == true)
+            {
+                return true;
+            }
+            return false;
+        }
         private void btn_SendVerify_Click(object sender, EventArgs e)
         {
             if (CheckEmptyEmail(TB_NhapEmail.Text))
@@ -90,6 +105,12 @@ namespace Hỗ_Trợ_GV
                 TB_PassVerify.Focus();
                 return;
             }
+            if (CheckEmailAlreadyExists(TB_NhapEmail.Text))
+            {
+                MessageBox.Show("Email đã tồn tại trong hệ thống");
+                return;
+            }
+
             timer1.Stop();  
             string to, from, pass;
             to = TB_NhapEmail.Text;
@@ -136,6 +157,7 @@ namespace Hỗ_Trợ_GV
             conn.Open();
             MailAddress addr = new MailAddress(TB_NhapEmail.Text);
             string tenDangNhap = addr.User;
+
             if (TB_Code.Text.Equals(num.ToString()))
             {
                 cmd = new SqlCommand("insert into TaiKhoan values('" + tenDangNhap + "','" + TB_Pass.Text + "')", conn);
