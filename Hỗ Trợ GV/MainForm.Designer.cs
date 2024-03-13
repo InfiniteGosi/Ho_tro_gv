@@ -32,10 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_LichDay = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_TinhLuong = new Guna.UI2.WinForms.Guna2Button();
             this.btn_ThongKe = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TinhLuong = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_LichDay = new Guna.UI2.WinForms.Guna2Button();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -83,54 +83,6 @@
             this.panel2.Size = new System.Drawing.Size(1067, 61);
             this.panel2.TabIndex = 3;
             // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 118);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1067, 436);
-            this.panel3.TabIndex = 4;
-            // 
-            // btn_LichDay
-            // 
-            this.btn_LichDay.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btn_LichDay.CheckedState.CustomBorderColor = System.Drawing.Color.Red;
-            this.btn_LichDay.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btn_LichDay.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.btn_LichDay.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_LichDay.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_LichDay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_LichDay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_LichDay.FillColor = System.Drawing.Color.White;
-            this.btn_LichDay.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_LichDay.ForeColor = System.Drawing.Color.Black;
-            this.btn_LichDay.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_LichDay.Location = new System.Drawing.Point(0, 0);
-            this.btn_LichDay.Name = "btn_LichDay";
-            this.btn_LichDay.Size = new System.Drawing.Size(180, 61);
-            this.btn_LichDay.TabIndex = 0;
-            this.btn_LichDay.Text = "Lịch dạy";
-            // 
-            // btn_TinhLuong
-            // 
-            this.btn_TinhLuong.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btn_TinhLuong.CheckedState.CustomBorderColor = System.Drawing.Color.Red;
-            this.btn_TinhLuong.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btn_TinhLuong.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.btn_TinhLuong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TinhLuong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TinhLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TinhLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TinhLuong.FillColor = System.Drawing.Color.White;
-            this.btn_TinhLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_TinhLuong.ForeColor = System.Drawing.Color.Black;
-            this.btn_TinhLuong.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_TinhLuong.Location = new System.Drawing.Point(176, 0);
-            this.btn_TinhLuong.Name = "btn_TinhLuong";
-            this.btn_TinhLuong.Size = new System.Drawing.Size(180, 61);
-            this.btn_TinhLuong.TabIndex = 1;
-            this.btn_TinhLuong.Text = "Tính lương";
-            // 
             // btn_ThongKe
             // 
             this.btn_ThongKe.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -151,12 +103,62 @@
             this.btn_ThongKe.TabIndex = 2;
             this.btn_ThongKe.Text = "Thống kê";
             // 
+            // btn_TinhLuong
+            // 
+            this.btn_TinhLuong.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_TinhLuong.CheckedState.CustomBorderColor = System.Drawing.Color.Red;
+            this.btn_TinhLuong.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btn_TinhLuong.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btn_TinhLuong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TinhLuong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TinhLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TinhLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TinhLuong.FillColor = System.Drawing.Color.White;
+            this.btn_TinhLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_TinhLuong.ForeColor = System.Drawing.Color.Black;
+            this.btn_TinhLuong.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_TinhLuong.Location = new System.Drawing.Point(176, 0);
+            this.btn_TinhLuong.Name = "btn_TinhLuong";
+            this.btn_TinhLuong.Size = new System.Drawing.Size(180, 61);
+            this.btn_TinhLuong.TabIndex = 1;
+            this.btn_TinhLuong.Text = "Tính lương";
+            this.btn_TinhLuong.Click += new System.EventHandler(this.btn_TinhLuong_Click);
+            // 
+            // btn_LichDay
+            // 
+            this.btn_LichDay.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btn_LichDay.CheckedState.CustomBorderColor = System.Drawing.Color.Red;
+            this.btn_LichDay.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btn_LichDay.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btn_LichDay.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_LichDay.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_LichDay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_LichDay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_LichDay.FillColor = System.Drawing.Color.White;
+            this.btn_LichDay.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_LichDay.ForeColor = System.Drawing.Color.Black;
+            this.btn_LichDay.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_LichDay.Location = new System.Drawing.Point(0, 0);
+            this.btn_LichDay.Name = "btn_LichDay";
+            this.btn_LichDay.Size = new System.Drawing.Size(180, 61);
+            this.btn_LichDay.TabIndex = 0;
+            this.btn_LichDay.Text = "Lịch dạy";
+            this.btn_LichDay.Click += new System.EventHandler(this.btn_LichDay_Click);
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(0, 118);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(1067, 436);
+            this.panelContainer.TabIndex = 4;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -175,7 +177,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelContainer;
         private Guna.UI2.WinForms.Guna2Button btn_LichDay;
         private Guna.UI2.WinForms.Guna2Button btn_ThongKe;
         private Guna.UI2.WinForms.Guna2Button btn_TinhLuong;
