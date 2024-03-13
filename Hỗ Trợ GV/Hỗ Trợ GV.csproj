@@ -74,6 +74,18 @@
     <Compile Include="Model\TaiKhoan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UC_LichDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_LichDay.Designer.cs">
+      <DependentUpon>UC_LichDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_TinhLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_TinhLuong.Designer.cs">
+      <DependentUpon>UC_TinhLuong.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +104,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\UC_LichDay.resx">
+      <DependentUpon>UC_LichDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_TinhLuong.resx">
+      <DependentUpon>UC_TinhLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
