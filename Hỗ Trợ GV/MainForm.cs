@@ -45,5 +45,11 @@ namespace Hỗ_Trợ_GV
             UC_TinhLuong uC_TinhLuong = new UC_TinhLuong();
             AddUserControl(uC_TinhLuong);
         }
+
+        private void btn_ThongKe_Click(object sender, EventArgs e)
+        {
+            UC_ThongKe uC_ThongKe = new UC_ThongKe();
+            AddUserControl(uC_ThongKe);
+        }
     }
 }

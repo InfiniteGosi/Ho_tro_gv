@@ -117,4 +117,456 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 21</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 29</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Lịch dạy</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="monthCalendar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 62</value>
+  </data>
+  <data name="monthCalendar1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;monthCalendar1.Name" xml:space="preserve">
+    <value>monthCalendar1</value>
+  </data>
+  <data name="&gt;&gt;monthCalendar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;monthCalendar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;monthCalendar1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="LB_2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 21</value>
+  </data>
+  <data name="LB_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 16</value>
+  </data>
+  <data name="LB_2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="LB_2.Text" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="&gt;&gt;LB_2.Name" xml:space="preserve">
+    <value>LB_2</value>
+  </data>
+  <data name="&gt;&gt;LB_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="LB_3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 21</value>
+  </data>
+  <data name="LB_3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 16</value>
+  </data>
+  <data name="LB_3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="LB_3.Text" xml:space="preserve">
+    <value>Tueday</value>
+  </data>
+  <data name="&gt;&gt;LB_3.Name" xml:space="preserve">
+    <value>LB_3</value>
+  </data>
+  <data name="&gt;&gt;LB_3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_3.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="LB_4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>789, 21</value>
+  </data>
+  <data name="LB_4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 16</value>
+  </data>
+  <data name="LB_4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="LB_4.Text" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="&gt;&gt;LB_4.Name" xml:space="preserve">
+    <value>LB_4</value>
+  </data>
+  <data name="&gt;&gt;LB_4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_4.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="LB_5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>943, 21</value>
+  </data>
+  <data name="LB_5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 16</value>
+  </data>
+  <data name="LB_5.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="LB_5.Text" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="&gt;&gt;LB_5.Name" xml:space="preserve">
+    <value>LB_5</value>
+  </data>
+  <data name="&gt;&gt;LB_5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_5.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="LB_6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1071, 24</value>
+  </data>
+  <data name="LB_6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 16</value>
+  </data>
+  <data name="LB_6.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="LB_6.Text" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="&gt;&gt;LB_6.Name" xml:space="preserve">
+    <value>LB_6</value>
+  </data>
+  <data name="&gt;&gt;LB_6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_6.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LB_7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1181, 21</value>
+  </data>
+  <data name="LB_7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 16</value>
+  </data>
+  <data name="LB_7.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="LB_7.Text" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="&gt;&gt;LB_7.Name" xml:space="preserve">
+    <value>LB_7</value>
+  </data>
+  <data name="&gt;&gt;LB_7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_7.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LB_8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1304, 21</value>
+  </data>
+  <data name="LB_8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 16</value>
+  </data>
+  <data name="LB_8.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="LB_8.Text" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="&gt;&gt;LB_8.Name" xml:space="preserve">
+    <value>LB_8</value>
+  </data>
+  <data name="&gt;&gt;LB_8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_8.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="LB_Ca1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_Ca1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 115</value>
+  </data>
+  <data name="LB_Ca1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="LB_Ca1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="LB_Ca1.Text" xml:space="preserve">
+    <value>Ca 1</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca1.Name" xml:space="preserve">
+    <value>LB_Ca1</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LB_Ca2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_Ca2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 219</value>
+  </data>
+  <data name="LB_Ca2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="LB_Ca2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="LB_Ca2.Text" xml:space="preserve">
+    <value>Ca 2</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca2.Name" xml:space="preserve">
+    <value>LB_Ca2</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LB_Ca3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_Ca3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 325</value>
+  </data>
+  <data name="LB_Ca3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="LB_Ca3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="LB_Ca3.Text" xml:space="preserve">
+    <value>Ca 3</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca3.Name" xml:space="preserve">
+    <value>LB_Ca3</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LB_Ca4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LB_Ca4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 432</value>
+  </data>
+  <data name="LB_Ca4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 16</value>
+  </data>
+  <data name="LB_Ca4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="LB_Ca4.Text" xml:space="preserve">
+    <value>Ca 4</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca4.Name" xml:space="preserve">
+    <value>LB_Ca4</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LB_Ca4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="PN_LapLich.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 62</value>
+  </data>
+  <data name="PN_LapLich.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1200, 500</value>
+  </data>
+  <data name="PN_LapLich.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;PN_LapLich.Name" xml:space="preserve">
+    <value>PN_LapLich</value>
+  </data>
+  <data name="&gt;&gt;PN_LapLich.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PN_LapLich.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PN_LapLich.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>Môn 1</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>Môn 2</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>Môn 3</value>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>Môn 4</value>
+  </data>
+  <data name="comboBox1.Items4" xml:space="preserve">
+    <value>Môn 5</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 305</value>
+  </data>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 24</value>
+  </data>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BTN_LapLich.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="BTN_LapLich.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 375</value>
+  </data>
+  <data name="BTN_LapLich.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 54</value>
+  </data>
+  <data name="BTN_LapLich.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="BTN_LapLich.Text" xml:space="preserve">
+    <value>Lên lịch</value>
+  </data>
+  <data name="&gt;&gt;BTN_LapLich.Name" xml:space="preserve">
+    <value>BTN_LapLich</value>
+  </data>
+  <data name="&gt;&gt;BTN_LapLich.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;BTN_LapLich.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_LapLich.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1360, 563</value>
+  </data>
+  <data name="&gt;&gt;guna2AnimateWindow1.Name" xml:space="preserve">
+    <value>guna2AnimateWindow1</value>
+  </data>
+  <data name="&gt;&gt;guna2AnimateWindow1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2AnimateWindow, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UC_LichDay</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

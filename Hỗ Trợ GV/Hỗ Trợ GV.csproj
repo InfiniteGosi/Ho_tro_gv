@@ -65,6 +65,12 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="LenLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LenLich.Designer.cs">
+      <DependentUpon>LenLich.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,12 @@
     <Compile Include="UserControls\UC_LichDay.Designer.cs">
       <DependentUpon>UC_LichDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_ThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_ThongKe.Designer.cs">
+      <DependentUpon>UC_ThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UC_TinhLuong.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LenLich.resx">
+      <DependentUpon>LenLich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -106,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\UC_LichDay.resx">
       <DependentUpon>UC_LichDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_ThongKe.resx">
+      <DependentUpon>UC_ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_TinhLuong.resx">
       <DependentUpon>UC_TinhLuong.cs</DependentUpon>

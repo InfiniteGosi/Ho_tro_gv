@@ -42,7 +42,8 @@
             // 
             // bt_DangXuat
             // 
-            this.bt_DangXuat.Location = new System.Drawing.Point(930, 12);
+            this.bt_DangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_DangXuat.Location = new System.Drawing.Point(1160, 9);
             this.bt_DangXuat.Name = "bt_DangXuat";
             this.bt_DangXuat.Size = new System.Drawing.Size(125, 36);
             this.bt_DangXuat.TabIndex = 0;
@@ -58,7 +59,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 57);
+            this.panel1.Size = new System.Drawing.Size(1305, 57);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -80,7 +81,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 57);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1067, 61);
+            this.panel2.Size = new System.Drawing.Size(1305, 61);
             this.panel2.TabIndex = 3;
             // 
             // btn_ThongKe
@@ -102,6 +103,7 @@
             this.btn_ThongKe.Size = new System.Drawing.Size(180, 61);
             this.btn_ThongKe.TabIndex = 2;
             this.btn_ThongKe.Text = "Thống kê";
+            this.btn_ThongKe.Click += new System.EventHandler(this.btn_ThongKe_Click);
             // 
             // btn_TinhLuong
             // 
@@ -150,20 +152,21 @@
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(0, 118);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1067, 436);
+            this.panelContainer.Size = new System.Drawing.Size(1305, 554);
             this.panelContainer.TabIndex = 4;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1305, 672);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
