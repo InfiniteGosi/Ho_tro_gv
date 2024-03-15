@@ -32,17 +32,25 @@ namespace Hỗ_Trợ_GV
             childForm.BringToFront();
             childForm.Show();
         }
-        private void btn_lichday_Click(object sender, EventArgs e)
+
+        private void bnt_lichday_Click(object sender, EventArgs e)
         {
             OpenChildForm(new LichDay());
         }
+
         private void btn_tinhluong_Click(object sender, EventArgs e)
         {
             OpenChildForm(new TinhLuong());
         }
+
         private void btn_thongke_Click(object sender, EventArgs e)
         {
             OpenChildForm(new ThongKe());
+        }
+
+        private void btn_dangxuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
