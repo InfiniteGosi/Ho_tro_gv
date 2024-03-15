@@ -42,6 +42,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btn_thongke);
             this.panel1.Controls.Add(this.btn_tinhluong);
@@ -53,6 +55,9 @@
             // 
             // pn_main
             // 
+            this.pn_main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_main.BackColor = System.Drawing.Color.Gainsboro;
             this.pn_main.Location = new System.Drawing.Point(0, 82);
             this.pn_main.Name = "pn_main";
@@ -90,6 +95,7 @@
             this.bnt_lichday.TabIndex = 0;
             this.bnt_lichday.Text = "Lịch dạy";
             this.bnt_lichday.UseVisualStyleBackColor = true;
+            this.bnt_lichday.Click += new System.EventHandler(this.bnt_lichday_Click);
             // 
             // btn_tinhluong
             // 
@@ -101,6 +107,7 @@
             this.btn_tinhluong.TabIndex = 1;
             this.btn_tinhluong.Text = "Tính lương";
             this.btn_tinhluong.UseVisualStyleBackColor = true;
+            this.btn_tinhluong.Click += new System.EventHandler(this.btn_tinhluong_Click);
             // 
             // btn_thongke
             // 
@@ -112,9 +119,11 @@
             this.btn_thongke.TabIndex = 2;
             this.btn_thongke.Text = "Thống kê";
             this.btn_thongke.UseVisualStyleBackColor = true;
+            this.btn_thongke.Click += new System.EventHandler(this.btn_thongke_Click);
             // 
             // btn_dangxuat
             // 
+            this.btn_dangxuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_dangxuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_dangxuat.FlatAppearance.BorderSize = 3;
             this.btn_dangxuat.Location = new System.Drawing.Point(1116, 4);
@@ -123,6 +132,7 @@
             this.btn_dangxuat.TabIndex = 1;
             this.btn_dangxuat.Text = "Đăng xuất";
             this.btn_dangxuat.UseVisualStyleBackColor = true;
+            this.btn_dangxuat.Click += new System.EventHandler(this.btn_dangxuat_Click);
             // 
             // MainForm
             // 
@@ -132,6 +142,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pn_main);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
