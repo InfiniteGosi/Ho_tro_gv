@@ -35,7 +35,7 @@
             this.bnt_lichday = new System.Windows.Forms.Button();
             this.btn_tinhluong = new System.Windows.Forms.Button();
             this.btn_thongke = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_dangxuat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +62,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSalmon;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_dangxuat);
             this.panel2.Controls.Add(this.lb_htgv);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -113,16 +113,16 @@
             this.btn_thongke.Text = "Thống kê";
             this.btn_thongke.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_dangxuat
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.Location = new System.Drawing.Point(1116, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 28);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Đăng xuất";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_dangxuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_dangxuat.FlatAppearance.BorderSize = 3;
+            this.btn_dangxuat.Location = new System.Drawing.Point(1116, 4);
+            this.btn_dangxuat.Name = "btn_dangxuat";
+            this.btn_dangxuat.Size = new System.Drawing.Size(97, 28);
+            this.btn_dangxuat.TabIndex = 1;
+            this.btn_dangxuat.Text = "Đăng xuất";
+            this.btn_dangxuat.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -150,6 +150,6 @@
         private System.Windows.Forms.Button bnt_lichday;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lb_htgv;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_dangxuat;
     }
 }
