@@ -48,3 +48,4 @@ CREATE TABLE MonHocDay
 
 delete from TaiKhoan where TenDangNhap = 'hokhanglol54'
 select * from TaiKhoan
+insert into TaiKhoan values ('minhduc','123')
