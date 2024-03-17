@@ -16,7 +16,7 @@ namespace Hỗ_Trợ_GV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LichDay());
+            Application.Run(new DangNhap());
         }
     }
 }
