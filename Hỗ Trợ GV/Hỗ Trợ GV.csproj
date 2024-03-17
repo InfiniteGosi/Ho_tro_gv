@@ -102,6 +102,12 @@
     <Compile Include="TinhLuong.Designer.cs">
       <DependentUpon>TinhLuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TinhLuong.resx">
       <DependentUpon>TinhLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
