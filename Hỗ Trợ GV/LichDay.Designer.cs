@@ -57,12 +57,12 @@ namespace Hỗ_Trợ_GV
             // 
             this.FLP_shiftcontainer.Location = new System.Drawing.Point(113, 111);
             this.FLP_shiftcontainer.Name = "FLP_shiftcontainer";
-            this.FLP_shiftcontainer.Size = new System.Drawing.Size(1148, 568);
+            this.FLP_shiftcontainer.Size = new System.Drawing.Size(1394, 534);
             this.FLP_shiftcontainer.TabIndex = 0;
             // 
             // Btn_tuansau
             // 
-            this.Btn_tuansau.Location = new System.Drawing.Point(1163, 704);
+            this.Btn_tuansau.Location = new System.Drawing.Point(1344, 708);
             this.Btn_tuansau.Name = "Btn_tuansau";
             this.Btn_tuansau.Size = new System.Drawing.Size(98, 36);
             this.Btn_tuansau.TabIndex = 1;
@@ -72,7 +72,7 @@ namespace Hỗ_Trợ_GV
             // 
             // Btn_tuantruoc
             // 
-            this.Btn_tuantruoc.Location = new System.Drawing.Point(832, 704);
+            this.Btn_tuantruoc.Location = new System.Drawing.Point(1017, 708);
             this.Btn_tuantruoc.Name = "Btn_tuantruoc";
             this.Btn_tuantruoc.Size = new System.Drawing.Size(98, 36);
             this.Btn_tuantruoc.TabIndex = 2;
@@ -84,7 +84,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(165, 44);
+            this.label1.Location = new System.Drawing.Point(177, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 22);
             this.label1.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(325, 44);
+            this.label2.Location = new System.Drawing.Point(359, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 22);
             this.label2.TabIndex = 4;
@@ -104,7 +104,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(642, 44);
+            this.label3.Location = new System.Drawing.Point(744, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 22);
             this.label3.TabIndex = 6;
@@ -114,7 +114,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(492, 44);
+            this.label4.Location = new System.Drawing.Point(565, 44);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 22);
             this.label4.TabIndex = 5;
@@ -124,7 +124,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(971, 44);
+            this.label5.Location = new System.Drawing.Point(1145, 44);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 22);
             this.label5.TabIndex = 8;
@@ -134,7 +134,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(808, 44);
+            this.label6.Location = new System.Drawing.Point(944, 44);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 22);
             this.label6.TabIndex = 7;
@@ -144,7 +144,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1139, 44);
+            this.label7.Location = new System.Drawing.Point(1359, 44);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 22);
             this.label7.TabIndex = 9;
@@ -194,7 +194,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_weekinterval.AutoSize = true;
             this.LB_weekinterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_weekinterval.Location = new System.Drawing.Point(932, 709);
+            this.LB_weekinterval.Location = new System.Drawing.Point(1121, 713);
             this.LB_weekinterval.Name = "LB_weekinterval";
             this.LB_weekinterval.Size = new System.Drawing.Size(68, 22);
             this.LB_weekinterval.TabIndex = 15;
@@ -204,7 +204,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d1.AutoSize = true;
             this.LB_d1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d1.Location = new System.Drawing.Point(174, 78);
+            this.LB_d1.Location = new System.Drawing.Point(186, 78);
             this.LB_d1.Name = "LB_d1";
             this.LB_d1.Size = new System.Drawing.Size(62, 20);
             this.LB_d1.TabIndex = 16;
@@ -214,7 +214,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d2.AutoSize = true;
             this.LB_d2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d2.Location = new System.Drawing.Point(330, 78);
+            this.LB_d2.Location = new System.Drawing.Point(364, 78);
             this.LB_d2.Name = "LB_d2";
             this.LB_d2.Size = new System.Drawing.Size(62, 20);
             this.LB_d2.TabIndex = 17;
@@ -224,7 +224,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d3.AutoSize = true;
             this.LB_d3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d3.Location = new System.Drawing.Point(492, 78);
+            this.LB_d3.Location = new System.Drawing.Point(565, 78);
             this.LB_d3.Name = "LB_d3";
             this.LB_d3.Size = new System.Drawing.Size(62, 20);
             this.LB_d3.TabIndex = 18;
@@ -234,7 +234,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d4.AutoSize = true;
             this.LB_d4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d4.Location = new System.Drawing.Point(652, 78);
+            this.LB_d4.Location = new System.Drawing.Point(754, 78);
             this.LB_d4.Name = "LB_d4";
             this.LB_d4.Size = new System.Drawing.Size(62, 20);
             this.LB_d4.TabIndex = 19;
@@ -244,7 +244,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d5.AutoSize = true;
             this.LB_d5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d5.Location = new System.Drawing.Point(822, 78);
+            this.LB_d5.Location = new System.Drawing.Point(958, 78);
             this.LB_d5.Name = "LB_d5";
             this.LB_d5.Size = new System.Drawing.Size(62, 20);
             this.LB_d5.TabIndex = 20;
@@ -254,7 +254,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d6.AutoSize = true;
             this.LB_d6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d6.Location = new System.Drawing.Point(985, 78);
+            this.LB_d6.Location = new System.Drawing.Point(1159, 78);
             this.LB_d6.Name = "LB_d6";
             this.LB_d6.Size = new System.Drawing.Size(62, 20);
             this.LB_d6.TabIndex = 21;
@@ -264,7 +264,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d7.AutoSize = true;
             this.LB_d7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d7.Location = new System.Drawing.Point(1148, 78);
+            this.LB_d7.Location = new System.Drawing.Point(1368, 78);
             this.LB_d7.Name = "LB_d7";
             this.LB_d7.Size = new System.Drawing.Size(62, 20);
             this.LB_d7.TabIndex = 22;
@@ -274,7 +274,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1286, 768);
+            this.ClientSize = new System.Drawing.Size(1519, 846);
             this.Controls.Add(this.LB_d7);
             this.Controls.Add(this.LB_d6);
             this.Controls.Add(this.LB_d5);

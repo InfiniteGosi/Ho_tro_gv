@@ -13,21 +13,27 @@ namespace Hỗ_Trợ_GV
     public partial class LichDay : Form
     {
         private DateTime currentDate;
+        private const int SOCA = 4;
+        private const int SONGAY = 7;
         public LichDay()
         {
             InitializeComponent();
             currentDate = DateTime.Today;
             DisplayWeekInterval();
-            DisplayColumns();
+            GetCell();
         }
     
-
-        private void DisplayColumns()
+        private void GetCell()
         {
-            for (int i = 1; i <= 28; i++) 
-            { 
-                UserControlBlank ucblank = new UserControlBlank();
-                FLP_shiftcontainer.Controls.Add(ucblank);
+            for (int i = 1; i <= SOCA; i++)
+            {
+                for (int j = 1; j <= SONGAY; j++)
+                {
+                    UserControlBlank ucblank = new UserControlBlank();
+                    ucblank.setCa(i);
+                    ucblank.setCurrentDate(currentDate.AddDays(j - 1));
+                    FLP_shiftcontainer.Controls.Add(ucblank);
+                }
             }
         }
 
@@ -54,11 +60,7 @@ namespace Hỗ_Trợ_GV
             DisplayWeekInterval();
 
             FLP_shiftcontainer.Controls.Clear();
-            for (int i = 1; i <= 28; i++)
-            {
-                UserControlBlank ucblank = new UserControlBlank();
-                FLP_shiftcontainer.Controls.Add(ucblank);
-            }
+            GetCell();
         }
 
         private void Btn_tuansau_Click(object sender, EventArgs e)
@@ -66,11 +68,7 @@ namespace Hỗ_Trợ_GV
             currentDate = currentDate.AddDays(7);
             DisplayWeekInterval();
             FLP_shiftcontainer.Controls.Clear();
-            for (int i = 1; i <= 28; i++)
-            {
-                UserControlBlank ucblank = new UserControlBlank();
-                FLP_shiftcontainer.Controls.Add(ucblank);
-            }
+            GetCell();
         }
     }
 }

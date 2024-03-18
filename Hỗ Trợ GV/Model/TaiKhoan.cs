@@ -10,15 +10,6 @@ namespace Hỗ_Trợ_GV.Model
     {
         private string tenDangNhap;
         private string matKhau;
-        public String TenDangNhap { 
-            get { return tenDangNhap; } 
-            set {  tenDangNhap = value; }
-        }
-        public String MatKhau 
-        { 
-            get { return matKhau; }
-            set { matKhau = value; }
-        }
         public TaiKhoan(string tenDangNhap, string matKhau)
         {
             this.tenDangNhap = tenDangNhap ;
