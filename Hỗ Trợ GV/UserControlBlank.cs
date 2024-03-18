@@ -37,7 +37,7 @@ namespace Hỗ_Trợ_GV
             DatLich datLich = new DatLich(ca, currentDate);
             datLich.Show();
         }
-
+        // Hover các ô sẽ có hiệu ứng đổi màu
         private void UserControlBlank_MouseEnter(object sender, EventArgs e)
         {
             this.BackColor = Color.Silver;
@@ -47,7 +47,7 @@ namespace Hỗ_Trợ_GV
         {
             this.BackColor = Color.White;
         }
-
+        // Hàm đọc thông tin ca học từ csdl và hiện thông tin ca học của một ô
         private void DisplayShift()
         {
             
@@ -81,12 +81,12 @@ namespace Hỗ_Trợ_GV
                 }
             }
         }
-
+        // Gọi hàm hiện thông tin ca học mỗi khi các ô được load lên
         private void UserControlBlank_Load(object sender, EventArgs e)
         {
             DisplayShift();
         }
-
+        // Gọi hàm hiện thông tin ca học trên ô đã chọn mỗi khi lưu ca học mới
         private void timer1_Tick(object sender, EventArgs e)
         {
             DisplayShift();

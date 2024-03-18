@@ -32,7 +32,7 @@ namespace Hỗ_Trợ_GV
             this.ca = ca;
             this.currentDate = currentDate;
         }
-
+        // Đọc thông tin trường từ csdl và tạo object mới từ lớp trường
         private void ReadSchools()
         {
             string query = "select * from Truong";
@@ -51,6 +51,7 @@ namespace Hỗ_Trợ_GV
                         string tenTruong = reader["TenTruong"].ToString();
                         int luongMotCaDay = Convert.ToInt32(reader["Luong1CaDay"]);
                         Truong truong = new Truong(maTruong, tenTruong, luongMotCaDay);
+                        // Thêm vào list object các trường
                         schoolList.Add(truong);
                     }
                     reader.Close();
@@ -66,17 +67,19 @@ namespace Hỗ_Trợ_GV
                 }
             }
         }
-
         private void DatLich_Load(object sender, EventArgs e)
         {
+            // Hiển thị ngày và ca hiện tại của ô đó khi được chọn.
             LB_shiftinfo.Text = $"Ca {ca}  {currentDate.ToString("dd/MM/yyyy")}";
             ReadSchools();
+            // Load tên trường lên CB_truong
             foreach(Truong t in schoolList)
             {
                 CB_truong.Items.Add(t);
             }
         }
 
+        // Đọc thông tin môn học thông qua mã trường và tạo object môn học
         private void ReadSubjects(string maTruong)
         {
             string query = "select * from MonHoc where MaTruong = '" + maTruong + "'";
@@ -94,6 +97,7 @@ namespace Hỗ_Trợ_GV
                         string maMon = reader["MaMon"].ToString();
                         string tenMon = reader["TenMon"].ToString();
                         MonHoc monhoc = new MonHoc(maMon, tenMon);
+                        // Thêm vào list object
                         subjList.Add(monhoc);
                     }
                     reader.Close();
@@ -109,7 +113,7 @@ namespace Hỗ_Trợ_GV
                 }
             }
         }
-
+        // Khi CB_truong thay đổi thì các môn sẽ thay đổi tương ứng với trường đó
         private void CB_truong_SelectedIndexChanged(object sender, EventArgs e)
         {
             subjList.Clear();
@@ -122,7 +126,7 @@ namespace Hỗ_Trợ_GV
                 CB_monhoc.Items.Add(m);
             }
         }
-
+        // Lưu ca học đã đăng ký vào csdl
         private bool SaveShift()
         {
             string query = "INSERT INTO CaHoc VALUES(@CurrentDate, @Ca, @MaMon, @MaTruong)";
@@ -152,7 +156,7 @@ namespace Hỗ_Trợ_GV
             }
             return true;
         }
-
+        // Gọi hàm lưu ca học
         private void BT_save_Click(object sender, EventArgs e)
         {
             maMon = CB_monhoc.SelectedItem.ToString().Split('-')[0];
