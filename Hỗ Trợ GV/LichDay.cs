@@ -12,8 +12,11 @@ namespace Hỗ_Trợ_GV
 {
     public partial class LichDay : Form
     {
+        // Ngày tại một ô
         private DateTime currentDate;
+        // Số ca
         private const int SOCA = 4;
+        // Số ngày trong tuần
         private const int SONGAY = 7;
         public LichDay()
         {
@@ -22,7 +25,8 @@ namespace Hỗ_Trợ_GV
             DisplayWeekInterval();
             GetCell();
         }
-    
+        
+        // Thêm các cell vào tổng có 28 cell
         private void GetCell()
         {
             for (int i = 1; i <= SOCA; i++)
@@ -37,6 +41,7 @@ namespace Hỗ_Trợ_GV
             }
         }
 
+        // Hiện khoảng tuần giữa nút tuần tới và tuần rồi
         private void DisplayWeekInterval()
         {
             DayOfWeek currentDayOfWeek = currentDate.DayOfWeek;
@@ -53,7 +58,8 @@ namespace Hỗ_Trợ_GV
             LB_d6.Text = $"({(startOfWeek.Day + 5).ToString()}/{startOfWeek.Month.ToString()})";
             LB_d7.Text = $"({endOfWeek.Day.ToString()}/{endOfWeek.Month.ToString()})";
         }
-
+        
+        // Qua tuần kế tiếp
         private void Btn_tuantruoc_Click(object sender, EventArgs e)
         {
             currentDate = currentDate.AddDays(-7);
@@ -63,6 +69,7 @@ namespace Hỗ_Trợ_GV
             GetCell();
         }
 
+        // Quay lại tuần rồi
         private void Btn_tuansau_Click(object sender, EventArgs e)
         {
             currentDate = currentDate.AddDays(7);
