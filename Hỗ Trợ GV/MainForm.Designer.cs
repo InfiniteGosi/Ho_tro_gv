@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_thongke = new System.Windows.Forms.Button();
+            this.btn_tinhluong = new System.Windows.Forms.Button();
+            this.bnt_lichday = new System.Windows.Forms.Button();
             this.pn_main = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lb_htgv = new System.Windows.Forms.Label();
-            this.bnt_lichday = new System.Windows.Forms.Button();
-            this.btn_tinhluong = new System.Windows.Forms.Button();
-            this.btn_thongke = new System.Windows.Forms.Button();
             this.btn_dangxuat = new System.Windows.Forms.Button();
+            this.lb_htgv = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1220, 49);
             this.panel1.TabIndex = 1;
+            // 
+            // btn_thongke
+            // 
+            this.btn_thongke.FlatAppearance.BorderSize = 0;
+            this.btn_thongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_thongke.Location = new System.Drawing.Point(259, 3);
+            this.btn_thongke.Name = "btn_thongke";
+            this.btn_thongke.Size = new System.Drawing.Size(126, 46);
+            this.btn_thongke.TabIndex = 2;
+            this.btn_thongke.Text = "Thống kê";
+            this.btn_thongke.UseVisualStyleBackColor = true;
+            this.btn_thongke.Click += new System.EventHandler(this.btn_thongke_Click);
+            // 
+            // btn_tinhluong
+            // 
+            this.btn_tinhluong.FlatAppearance.BorderSize = 0;
+            this.btn_tinhluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_tinhluong.Location = new System.Drawing.Point(129, 3);
+            this.btn_tinhluong.Name = "btn_tinhluong";
+            this.btn_tinhluong.Size = new System.Drawing.Size(126, 46);
+            this.btn_tinhluong.TabIndex = 1;
+            this.btn_tinhluong.Text = "Tính lương";
+            this.btn_tinhluong.UseVisualStyleBackColor = true;
+            this.btn_tinhluong.Click += new System.EventHandler(this.btn_tinhluong_Click);
+            // 
+            // bnt_lichday
+            // 
+            this.bnt_lichday.FlatAppearance.BorderSize = 0;
+            this.bnt_lichday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_lichday.Location = new System.Drawing.Point(0, 3);
+            this.bnt_lichday.Name = "bnt_lichday";
+            this.bnt_lichday.Size = new System.Drawing.Size(126, 46);
+            this.bnt_lichday.TabIndex = 0;
+            this.bnt_lichday.Text = "Lịch dạy";
+            this.bnt_lichday.UseVisualStyleBackColor = true;
+            this.bnt_lichday.Click += new System.EventHandler(this.bnt_lichday_Click);
             // 
             // pn_main
             // 
@@ -75,52 +111,6 @@
             this.panel2.Size = new System.Drawing.Size(1220, 35);
             this.panel2.TabIndex = 3;
             // 
-            // lb_htgv
-            // 
-            this.lb_htgv.AutoSize = true;
-            this.lb_htgv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_htgv.Location = new System.Drawing.Point(3, 5);
-            this.lb_htgv.Name = "lb_htgv";
-            this.lb_htgv.Size = new System.Drawing.Size(158, 25);
-            this.lb_htgv.TabIndex = 0;
-            this.lb_htgv.Text = "Hỗ trợ giảng viên";
-            // 
-            // bnt_lichday
-            // 
-            this.bnt_lichday.FlatAppearance.BorderSize = 0;
-            this.bnt_lichday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnt_lichday.Location = new System.Drawing.Point(0, 3);
-            this.bnt_lichday.Name = "bnt_lichday";
-            this.bnt_lichday.Size = new System.Drawing.Size(126, 46);
-            this.bnt_lichday.TabIndex = 0;
-            this.bnt_lichday.Text = "Lịch dạy";
-            this.bnt_lichday.UseVisualStyleBackColor = true;
-            this.bnt_lichday.Click += new System.EventHandler(this.bnt_lichday_Click);
-            // 
-            // btn_tinhluong
-            // 
-            this.btn_tinhluong.FlatAppearance.BorderSize = 0;
-            this.btn_tinhluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_tinhluong.Location = new System.Drawing.Point(129, 3);
-            this.btn_tinhluong.Name = "btn_tinhluong";
-            this.btn_tinhluong.Size = new System.Drawing.Size(126, 46);
-            this.btn_tinhluong.TabIndex = 1;
-            this.btn_tinhluong.Text = "Tính lương";
-            this.btn_tinhluong.UseVisualStyleBackColor = true;
-            this.btn_tinhluong.Click += new System.EventHandler(this.btn_tinhluong_Click);
-            // 
-            // btn_thongke
-            // 
-            this.btn_thongke.FlatAppearance.BorderSize = 0;
-            this.btn_thongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_thongke.Location = new System.Drawing.Point(259, 3);
-            this.btn_thongke.Name = "btn_thongke";
-            this.btn_thongke.Size = new System.Drawing.Size(126, 46);
-            this.btn_thongke.TabIndex = 2;
-            this.btn_thongke.Text = "Thống kê";
-            this.btn_thongke.UseVisualStyleBackColor = true;
-            this.btn_thongke.Click += new System.EventHandler(this.btn_thongke_Click);
-            // 
             // btn_dangxuat
             // 
             this.btn_dangxuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -134,6 +124,16 @@
             this.btn_dangxuat.UseVisualStyleBackColor = true;
             this.btn_dangxuat.Click += new System.EventHandler(this.btn_dangxuat_Click);
             // 
+            // lb_htgv
+            // 
+            this.lb_htgv.AutoSize = true;
+            this.lb_htgv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_htgv.Location = new System.Drawing.Point(3, 5);
+            this.lb_htgv.Name = "lb_htgv";
+            this.lb_htgv.Size = new System.Drawing.Size(158, 25);
+            this.lb_htgv.TabIndex = 0;
+            this.lb_htgv.Text = "Hỗ trợ giảng viên";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -145,7 +145,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "MainForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

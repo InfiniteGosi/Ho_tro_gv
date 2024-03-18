@@ -29,7 +29,7 @@ namespace Hỗ_Trợ_GV
                 this.Refresh();
             }
         }
-        private TaiKhoan taiKhoan;
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True");
@@ -44,7 +44,6 @@ namespace Hỗ_Trợ_GV
                 
                 if (data.Read() == true)
                 {
-                    taiKhoan = new TaiKhoan(tk, mk);
                     MessageBox.Show("Đăng nhập thành công");
                     MainForm mainForm = new MainForm();
                     mainForm.ShowDialog();
@@ -54,6 +53,7 @@ namespace Hỗ_Trợ_GV
                     MessageBox.Show("Đăng nhập thất bại");
                 }
                 conn.Close();
+                cmd.Dispose();
             }
             catch (Exception)
             {
