@@ -1,58 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Hỗ_Trợ_GV
 {
-    public partial class MainForm : Form
+    internal class Export
     {
-        public MainForm()
-        {
-            InitializeComponent();
-        }
-        private Form currentFormChild;
-        private void OpenChildForm(Form childForm)
-        {
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            pn_main.Controls.Add(childForm);
-            pn_main.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-        private void bnt_lichday_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new LichDay());
-        }
-
-        private void btn_tinhluong_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new TinhLuong());
-        }
-
-        private void btn_thongke_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ThongKe());
-        }
-
-        private void btn_dangxuat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         public void ExportFile(DataTable dataTable, string sheetName, string title)
         {
             // Create Excel object
@@ -64,7 +20,7 @@ namespace Hỗ_Trợ_GV
             Microsoft.Office.Interop.Excel.Sheets oSheets;
 
             Microsoft.Office.Interop.Excel.Workbook oBook;
-            
+
             Microsoft.Office.Interop.Excel.Worksheet oSheet;
 
             // Create new Excel WorkBook
@@ -85,7 +41,7 @@ namespace Hỗ_Trợ_GV
             oSheet.Name = sheetName;
 
             // Create title
-            Microsoft.Office.Interop.Excel.Range head = oSheet.get_Range("A1","G1");
+            Microsoft.Office.Interop.Excel.Range head = oSheet.get_Range("A1", "G1");
 
             head.MergeCells = true;
 
@@ -105,37 +61,43 @@ namespace Hỗ_Trợ_GV
 
             cl1.Value2 = "Mã môn học";
 
-            cl1.ColumnWidth = 5;
-            
+            cl1.ColumnWidth = 20;
+
             Microsoft.Office.Interop.Excel.Range cl2 = oSheet.get_Range("B3", "B3");
 
             cl2.Value2 = "Tên Môn học";
 
-            cl2.ColumnWidth = 25.0;
+            cl2.ColumnWidth = 50.0;
 
             Microsoft.Office.Interop.Excel.Range cl3 = oSheet.get_Range("C3", "C3");
 
             cl3.Value2 = "Trường dạy";
 
-            cl3.ColumnWidth = 25.0;
+            cl3.ColumnWidth = 50.0;
 
             Microsoft.Office.Interop.Excel.Range cl4 = oSheet.get_Range("D3", "D3");
 
             cl4.Value2 = "Lương 1 ca";
 
-            cl4.ColumnWidth = 5;
+            cl4.ColumnWidth = 20;
 
             Microsoft.Office.Interop.Excel.Range cl5 = oSheet.get_Range("E3", "E3");
 
             cl5.Value2 = "Số lượng ca dạy";
 
-            cl5.ColumnWidth = 5;
+            cl5.ColumnWidth = 20;
 
             Microsoft.Office.Interop.Excel.Range cl6 = oSheet.get_Range("F3", "F3");
 
             cl6.Value2 = "Tổng lương theo ca";
 
-            cl6.ColumnWidth = 15;
+            cl6.ColumnWidth = 20;
+
+            Microsoft.Office.Interop.Excel.Range cl7 = oSheet.get_Range("G3","G3");
+            
+            cl7.Value2 = "Lương tổng";
+
+            cl7.ColumnWidth = 20;
 
             Microsoft.Office.Interop.Excel.Range rowHead = oSheet.get_Range("A3", "G3");
 
@@ -159,7 +121,7 @@ namespace Hỗ_Trợ_GV
             for (int row = 0; row < dataTable.Rows.Count; row++)
             {
                 DataRow dataRow = dataTable.Rows[row];
-                
+
                 for (int col = 0; col < dataTable.Columns.Count; col++)
                 {
                     arr[row, col] = dataRow[col];

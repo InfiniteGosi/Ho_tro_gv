@@ -49,6 +49,7 @@ CREATE TABLE Taikhoan_Truong
 );
 
 
+
 insert into TaiKhoan values('khangho150', '123')
 select * from TaiKhoan
 delete from TaiKhoan where TenDangNhap = 'khangho150'
@@ -79,3 +80,4 @@ select * from CaHoc c
 inner join MonHoc m on m.MaMon = c.MaMon
 inner join Truong t on t.MaTruong = t.MaTruong
 where c.Ca = 2 and c.Ngay = '1/12/2023'
+
