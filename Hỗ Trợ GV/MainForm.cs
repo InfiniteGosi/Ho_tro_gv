@@ -15,6 +15,7 @@ namespace Hỗ_Trợ_GV
         public MainForm()
         {
             InitializeComponent();
+            LB_xinchao.Text = $"Xin chào {DangNhap.taiKhoanHienTai.TenDangNhap}";
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)

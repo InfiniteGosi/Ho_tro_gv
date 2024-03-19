@@ -54,7 +54,7 @@ namespace Hỗ_Trợ_GV
             string query = "SELECT * FROM CaHoc c " +
                            "INNER JOIN MonHoc m ON m.MaMon = c.MaMon " +
                            "INNER JOIN Truong t ON t.MaTruong = c.MaTruong " +
-                           $"WHERE c.Ca = '{ca}' AND c.Ngay = '{currentDate}'";
+                           $"WHERE c.Ca = '{ca}' AND c.Ngay = '{currentDate}' AND c.TenDangNhap = '{DangNhap.taiKhoanHienTai.TenDangNhap}'";
             using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
             {
                 try

@@ -29,7 +29,32 @@ namespace Hỗ_Trợ_GV
                 this.Refresh();
             }
         }
+        public static TaiKhoan taiKhoanHienTai;
+        private void GetTaiKhoanHienTai(string tenTaiKhoan)
+        {
+            string query = $"select * from Taikhoan where TenDangNhap = '{tenTaiKhoan}'";
+            using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    conn.Open();
 
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                        taiKhoanHienTai = new TaiKhoan(reader["TenDangNhap"].ToString(), reader["MatKhau"].ToString(), reader["Email"].ToString());
+                    cmd.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Connection error");
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+        }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True");
@@ -45,6 +70,7 @@ namespace Hỗ_Trợ_GV
                 if (data.Read() == true)
                 {
                     MessageBox.Show("Đăng nhập thành công");
+                    GetTaiKhoanHienTai(tk);
                     MainForm mainForm = new MainForm();
                     mainForm.ShowDialog();
                 }
