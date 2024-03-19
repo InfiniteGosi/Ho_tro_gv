@@ -7,8 +7,8 @@ GO
 CREATE TABLE TaiKhoan
 (
   TenDangNhap VARCHAR(100) NOT NULL,
-  MatKhau VARCHAR(100) NOT NULL,
   Email VARCHAR(100) NOT NULL,
+  MatKhau VARCHAR(100) NOT NULL,
   PRIMARY KEY (TenDangNhap)
 );
 
@@ -36,27 +36,17 @@ CREATE TABLE CaHoc
   MaMon VARCHAR(10) NOT NULL,
   MaTruong VARCHAR(10) NOT NULL,
   TenDangNhap VARCHAR(100) NOT NULL,
-  PRIMARY KEY (Ngay, Ca),
+  PRIMARY KEY (TenDangNhap, Ngay, Ca),
   FOREIGN KEY (MaMon) REFERENCES MonHoc(MaMon),
   FOREIGN KEY (MaTruong) REFERENCES Truong(MaTruong),
   FOREIGN KEY (TenDangNhap) REFERENCES TaiKhoan(TenDangNhap),
 );
 
-CREATE TABLE Taikhoan_Truong
-(
-  TenDangNhap VARCHAR(100) NOT NULL,
-  MaTruong VARCHAR(10) NOT NULL,
-  PRIMARY KEY (TenDangNhap, MaTruong),
-  FOREIGN KEY (TenDangNhap) REFERENCES TaiKhoan(TenDangNhap),
-  FOREIGN KEY (MaTruong) REFERENCES Truong(MaTruong)
-);
 
-
-
-insert into TaiKhoan values('khangho150', '123')
+insert into TaiKhoan values('khangho150', 'khangho150@gmail.com', '123')
+insert into TaiKhoan values('test123', 'test@gmail.com', '123')
 select * from TaiKhoan
 delete from TaiKhoan where TenDangNhap = 'khangho150'
-
 
 
 insert into Truong values('TDTU', N'Đại học Tôn Đức Thắng', 150000)
@@ -70,17 +60,18 @@ insert into MonHoc values('M003', N'Hệ cơ sở dữ liệu', 'TDTU')
 insert into MonHoc values('C001', N'Giải tích 1', 'HMUS')
 insert into MonHoc values('C002', N'Lập trình web', 'HMUS')
 insert into MonHoc values('C003', N'Cấu trúc dữ liệu', 'HMUS')
-select * from MonHoc where MaTruong = 'TDTU'
+select * from MonHoc
 
 
-insert into CaHoc values('1/12/2023', 2, 'M001', 'TDTU')
 select * from CaHoc
 delete from CaHoc
 
+select m.MaMon, m.MaTruong 
+from CaHoc c 
+inner join MonHoc m on m.MaMon = c.MaMon 
+inner join Truong t on t.MaTruong = c.MaTruong 
+where c.Ca = 2 
+  and c.Ngay = '1/12/2023' 
+  and c.TenDangNhap = 'khangho150';
 
-
-select * from CaHoc c
-inner join MonHoc m on m.MaMon = c.MaMon
-inner join Truong t on t.MaTruong = t.MaTruong
-where c.Ca = 2 and c.Ngay = '1/12/2023'
 
