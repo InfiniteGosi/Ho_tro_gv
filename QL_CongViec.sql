@@ -74,4 +74,3 @@ where c.Ca = 2
   and c.Ngay = '1/12/2023' 
   and c.TenDangNhap = 'khangho150';
 
-
