@@ -129,7 +129,7 @@ namespace Hỗ_Trợ_GV
         // Lưu ca học đã đăng ký vào csdl
         private bool SaveShift()
         {
-            string query = "INSERT INTO CaHoc VALUES(@CurrentDate, @Ca, @MaMon, @MaTruong)";
+            string query = "INSERT INTO CaHoc VALUES(@CurrentDate, @Ca, @MaMon, @MaTruong, @TenTaiKhoan)";
 
             using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
             {
@@ -142,6 +142,7 @@ namespace Hỗ_Trợ_GV
                         cmd.Parameters.AddWithValue("@Ca", ca);
                         cmd.Parameters.AddWithValue("@MaMon", maMon);
                         cmd.Parameters.AddWithValue("@MaTruong", maTruong);
+                        cmd.Parameters.AddWithValue("@TenTaiKhoan", DangNhap.taiKhoanHienTai.TenDangNhap);
                         cmd.ExecuteNonQuery();
                     }
                 }

@@ -8,6 +8,7 @@ CREATE TABLE TaiKhoan
 (
   TenDangNhap VARCHAR(100) NOT NULL,
   MatKhau VARCHAR(100) NOT NULL,
+  Email VARCHAR(100) NOT NULL,
   PRIMARY KEY (TenDangNhap)
 );
 
@@ -34,9 +35,11 @@ CREATE TABLE CaHoc
   Ca INT NOT NULL,
   MaMon VARCHAR(10) NOT NULL,
   MaTruong VARCHAR(10) NOT NULL,
+  TenDangNhap VARCHAR(100) NOT NULL,
   PRIMARY KEY (Ngay, Ca),
   FOREIGN KEY (MaMon) REFERENCES MonHoc(MaMon),
-  FOREIGN KEY (MaTruong) REFERENCES Truong(MaTruong)
+  FOREIGN KEY (MaTruong) REFERENCES Truong(MaTruong),
+  FOREIGN KEY (TenDangNhap) REFERENCES TaiKhoan(TenDangNhap),
 );
 
 CREATE TABLE Taikhoan_Truong

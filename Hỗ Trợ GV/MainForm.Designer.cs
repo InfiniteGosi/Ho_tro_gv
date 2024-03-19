@@ -36,6 +36,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_dangxuat = new System.Windows.Forms.Button();
             this.lb_htgv = new System.Windows.Forms.Label();
+            this.LB_xinchao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +46,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.LB_xinchao);
             this.panel1.Controls.Add(this.btn_thongke);
             this.panel1.Controls.Add(this.btn_tinhluong);
             this.panel1.Controls.Add(this.bnt_lichday);
@@ -134,6 +136,16 @@
             this.lb_htgv.TabIndex = 0;
             this.lb_htgv.Text = "Hỗ trợ giảng viên";
             // 
+            // LB_xinchao
+            // 
+            this.LB_xinchao.AutoSize = true;
+            this.LB_xinchao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_xinchao.Location = new System.Drawing.Point(1053, 13);
+            this.LB_xinchao.Name = "LB_xinchao";
+            this.LB_xinchao.Size = new System.Drawing.Size(58, 22);
+            this.LB_xinchao.TabIndex = 3;
+            this.LB_xinchao.Text = "label1";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -145,7 +157,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -161,5 +175,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lb_htgv;
         private System.Windows.Forms.Button btn_dangxuat;
+        private System.Windows.Forms.Label LB_xinchao;
     }
 }
