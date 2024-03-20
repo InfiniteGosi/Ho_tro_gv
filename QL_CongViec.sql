@@ -76,13 +76,3 @@ where c.Ca = 2
   and c.Ngay = '1/12/2023' 
   and c.TenDangNhap = 'khangho150';
 
-
-update CaHoc 
-set MaMon = 'C002', MaTruong = 'TDTU'
-where TenDangNhap = 'khangho150' and Ca = 1 and Ngay = '3/18/2024'
-select * from CaHoc
-delete from CaHoc
-
-delete from CaHoc
-where TenDangNhap = 'khangho150' and Ca = 1 and Ngay = '3/18/2024'
-

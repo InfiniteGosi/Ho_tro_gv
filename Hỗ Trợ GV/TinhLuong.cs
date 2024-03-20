@@ -35,7 +35,8 @@ namespace Hỗ_Trợ_GV
             {
                 dt = new DataTable();
                 con.Open();
-                cmd = new SqlCommand("SELECT mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay, COUNT(ch.Ngay) AS SoCaHoc, (t.Luong1CaDay * COUNT(ch.Ngay)) AS TongLuongTheoMon, SUM(t.Luong1CaDay * COUNT(ch.Ngay)) OVER () AS LuongTong\r\nFROM MonHoc mh INNER JOIN Truong t ON mh.MaTruong = t.MaTruong INNER JOIN CaHoc ch ON mh.MaMon = ch.MaMon GROUP BY mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay", con);
+                String tenDangNhap = DangNhap.taiKhoanHienTai.TenDangNhap;
+                cmd = new SqlCommand("SELECT mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay, COUNT(ch.Ngay) AS SoCaHoc, (t.Luong1CaDay * COUNT(ch.Ngay)) AS TongLuongTheoMon, SUM(t.Luong1CaDay * COUNT(ch.Ngay)) OVER () AS LuongTong \r\nFROM MonHoc mh INNER JOIN Truong t ON mh.MaTruong = t.MaTruong INNER JOIN CaHoc ch ON mh.MaMon = ch.MaMon \r\nWhere ch.TenDangNhap like '"+ tenDangNhap +"'\r\nGROUP BY mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay", con);
                 adt = new SqlDataAdapter(cmd);
                 adt.Fill(dt);
                 // cmd = new SqlCommand("SELECT SUM(T.Luong1CaDay * MH.SoCaDay) AS TotalSalary FROM Truong T JOIN MonHoc MH ON T.MaTruong = MH.MaTruong",con);
