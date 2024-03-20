@@ -281,7 +281,7 @@ namespace Hỗ_Trợ_GV
             // 
             // BTN_homnay
             // 
-            this.BTN_homnay.Location = new System.Drawing.Point(1641, 460);
+            this.BTN_homnay.Location = new System.Drawing.Point(1633, 460);
             this.BTN_homnay.Name = "BTN_homnay";
             this.BTN_homnay.Size = new System.Drawing.Size(99, 46);
             this.BTN_homnay.TabIndex = 24;
