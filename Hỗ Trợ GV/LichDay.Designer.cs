@@ -51,8 +51,6 @@ namespace Hỗ_Trợ_GV
             this.LB_d5 = new System.Windows.Forms.Label();
             this.LB_d6 = new System.Windows.Forms.Label();
             this.LB_d7 = new System.Windows.Forms.Label();
-            this.MC_chonngay = new System.Windows.Forms.MonthCalendar();
-            this.BTN_homnay = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FLP_shiftcontainer
@@ -271,31 +269,12 @@ namespace Hỗ_Trợ_GV
             this.LB_d7.Size = new System.Drawing.Size(62, 20);
             this.LB_d7.TabIndex = 22;
             this.LB_d7.Text = "label18";
-            // 
-            // MC_chonngay
-            // 
-            this.MC_chonngay.Location = new System.Drawing.Point(1553, 211);
-            this.MC_chonngay.Name = "MC_chonngay";
-            this.MC_chonngay.TabIndex = 23;
-            this.MC_chonngay.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.MC_chonngay_DateChanged);
-            // 
-            // BTN_homnay
-            // 
-            this.BTN_homnay.Location = new System.Drawing.Point(1631, 450);
-            this.BTN_homnay.Name = "BTN_homnay";
-            this.BTN_homnay.Size = new System.Drawing.Size(99, 46);
-            this.BTN_homnay.TabIndex = 24;
-            this.BTN_homnay.Text = "Hôm nay";
-            this.BTN_homnay.UseVisualStyleBackColor = true;
-            this.BTN_homnay.Click += new System.EventHandler(this.BTN_homnay_Click);
-            // 
+            //
             // LichDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1846, 873);
-            this.Controls.Add(this.BTN_homnay);
-            this.Controls.Add(this.MC_chonngay);
+            this.ClientSize = new System.Drawing.Size(1519, 846);
             this.Controls.Add(this.LB_d7);
             this.Controls.Add(this.LB_d6);
             this.Controls.Add(this.LB_d5);
@@ -320,7 +299,6 @@ namespace Hỗ_Trợ_GV
             this.Controls.Add(this.FLP_shiftcontainer);
             this.Name = "LichDay";
             this.Text = "LichDay";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,7 +328,5 @@ namespace Hỗ_Trợ_GV
         private System.Windows.Forms.Label LB_d5;
         private System.Windows.Forms.Label LB_d6;
         private System.Windows.Forms.Label LB_d7;
-        private System.Windows.Forms.MonthCalendar MC_chonngay;
-        private System.Windows.Forms.Button BTN_homnay;
     }
 }

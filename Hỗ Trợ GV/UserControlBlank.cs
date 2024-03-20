@@ -33,19 +33,9 @@ namespace Hỗ_Trợ_GV
         }
         private void UserControlBlank_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(LB_shift.Text))
-            {
-                TM_datlich.Start();
-                DatLich datLich = new DatLich(ca, currentDate);
-                datLich.Show();
-            }
-            else
-            {
-                TM_suaxoalich.Start();
-                SuaVaXoaLich suaVaXoa = new SuaVaXoaLich(ca, currentDate);
-                suaVaXoa.Show();
-            }
-            
+            timer1.Start();
+            DatLich datLich = new DatLich(ca, currentDate);
+            datLich.Show();
         }
         // Hover các ô sẽ có hiệu ứng đổi màu
         private void UserControlBlank_MouseEnter(object sender, EventArgs e)
@@ -60,6 +50,7 @@ namespace Hỗ_Trợ_GV
         // Hàm đọc thông tin ca học từ csdl và hiện thông tin ca học của một ô
         private void DisplayShift()
         {
+            
             string query = "SELECT * FROM CaHoc c " +
                            "INNER JOIN MonHoc m ON m.MaMon = c.MaMon " +
                            "INNER JOIN Truong t ON t.MaTruong = c.MaTruong " +
@@ -76,10 +67,6 @@ namespace Hỗ_Trợ_GV
                     if (reader.Read())
                     {
                         LB_shift.Text = String.Format("{0}\n{1}", reader["TenTruong"].ToString(), reader["TenMon"].ToString());
-                    }
-                    else
-                    {
-                        LB_shift.Text = "";
                     }
                     reader.Close();
                     cmd.Dispose();
@@ -99,14 +86,8 @@ namespace Hỗ_Trợ_GV
         {
             DisplayShift();
         }
-
         // Gọi hàm hiện thông tin ca học trên ô đã chọn mỗi khi lưu ca học mới
-        private void TM_datlich_Tick(object sender, EventArgs e)
-        {
-            DisplayShift();
-        }
-
-        private void TM_suaxoalich_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             DisplayShift();
         }

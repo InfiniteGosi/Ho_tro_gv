@@ -30,8 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.LB_shift = new System.Windows.Forms.Label();
-            this.TM_datlich = new System.Windows.Forms.Timer(this.components);
-            this.TM_suaxoalich = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // LB_shift
@@ -43,13 +42,9 @@
             this.LB_shift.Size = new System.Drawing.Size(0, 16);
             this.LB_shift.TabIndex = 0;
             // 
-            // TM_datlich
+            // timer1
             // 
-            this.TM_datlich.Tick += new System.EventHandler(this.TM_datlich_Tick);
-            // 
-            // TM_suaxoalich
-            // 
-            this.TM_suaxoalich.Tick += new System.EventHandler(this.TM_suaxoalich_Tick);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // UserControlBlank
             // 
@@ -71,7 +66,6 @@
         #endregion
 
         private System.Windows.Forms.Label LB_shift;
-        private System.Windows.Forms.Timer TM_datlich;
-        private System.Windows.Forms.Timer TM_suaxoalich;
+        private System.Windows.Forms.Timer timer1;
     }
 }

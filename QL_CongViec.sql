@@ -3,8 +3,6 @@ GO
 USE QL_CongViec
 GO
 
-use master
-
 
 CREATE TABLE TaiKhoan
 (
@@ -64,9 +62,9 @@ insert into MonHoc values('C002', N'Lập trình web', 'HMUS')
 insert into MonHoc values('C003', N'Cấu trúc dữ liệu', 'HMUS')
 select * from MonHoc
 
-insert into CaHoc values('3/18/2024', 1, 'C001', 'HMUS', 'khangho150')
 
-
+select * from CaHoc
+delete from CaHoc
 
 select m.MaMon, m.MaTruong 
 from CaHoc c 
@@ -75,4 +73,9 @@ inner join Truong t on t.MaTruong = c.MaTruong
 where c.Ca = 2 
   and c.Ngay = '1/12/2023' 
   and c.TenDangNhap = 'khangho150';
+
+SELECT mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay, COUNT(ch.Ngay) AS SoCaHoc, (t.Luong1CaDay * COUNT(ch.Ngay)) AS TongLuongTheoMon, SUM(t.Luong1CaDay * COUNT(ch.Ngay)) OVER () AS LuongTong 
+FROM MonHoc mh INNER JOIN Truong t ON mh.MaTruong = t.MaTruong INNER JOIN CaHoc ch ON mh.MaMon = ch.MaMon 
+Where ch.TenDangNhap like 'Khangho150'
+GROUP BY mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay
 
