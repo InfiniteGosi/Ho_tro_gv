@@ -3,6 +3,8 @@ GO
 USE QL_CongViec
 GO
 
+use master
+
 
 CREATE TABLE TaiKhoan
 (
@@ -62,9 +64,9 @@ insert into MonHoc values('C002', N'Lập trình web', 'HMUS')
 insert into MonHoc values('C003', N'Cấu trúc dữ liệu', 'HMUS')
 select * from MonHoc
 
+insert into CaHoc values('3/18/2024', 1, 'C001', 'HMUS', 'khangho150')
 
-select * from CaHoc
-delete from CaHoc
+
 
 select m.MaMon, m.MaTruong 
 from CaHoc c 
@@ -74,4 +76,13 @@ where c.Ca = 2
   and c.Ngay = '1/12/2023' 
   and c.TenDangNhap = 'khangho150';
 
+
+update CaHoc 
+set MaMon = 'C002', MaTruong = 'TDTU'
+where TenDangNhap = 'khangho150' and Ca = 1 and Ngay = '3/18/2024'
+select * from CaHoc
+delete from CaHoc
+
+delete from CaHoc
+where TenDangNhap = 'khangho150' and Ca = 1 and Ngay = '3/18/2024'
 
