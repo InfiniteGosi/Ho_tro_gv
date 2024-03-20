@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using Hỗ_Trợ_GV.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Hỗ_Trợ_GV.Model;
 
 namespace Hỗ_Trợ_GV
 {
-    public partial class DatLich : Form
+    public partial class SuaVaXoaLich : Form
     {
         private int ca;
         private DateTime currentDate;
@@ -21,12 +20,12 @@ namespace Hỗ_Trợ_GV
         private string maTruong;
         private List<Truong> schoolList = new List<Truong>();
         private List<MonHoc> subjList = new List<MonHoc>();
-        public DatLich()
+        public static bool shiftDeleted = false;
+        public SuaVaXoaLich()
         {
             InitializeComponent();
         }
-
-        public DatLich(int ca, DateTime currentDate)
+        public SuaVaXoaLich(int ca, DateTime currentDate)
         {
             InitializeComponent();
             this.ca = ca;
@@ -67,17 +66,6 @@ namespace Hỗ_Trợ_GV
                 }
             }
         }
-        private void DatLich_Load(object sender, EventArgs e)
-        {
-            // Hiển thị ngày và ca hiện tại của ô đó khi được chọn.
-            LB_shiftinfo.Text = $"Ca {ca}  {currentDate.ToString("dd/MM/yyyy")}";
-            ReadSchools();
-            // Load tên trường lên CB_truong
-            foreach(Truong t in schoolList)
-            {
-                CB_truong.Items.Add(t);
-            }
-        }
 
         // Đọc thông tin môn học thông qua mã trường và tạo object môn học
         private void ReadSubjects(string maTruong)
@@ -113,7 +101,19 @@ namespace Hỗ_Trợ_GV
                 }
             }
         }
-        // Khi CB_truong thay đổi thì các môn sẽ thay đổi tương ứng với trường đó
+
+        private void SuaVaXoaLich_Load(object sender, EventArgs e)
+        {
+            // Hiển thị ngày và ca hiện tại của ô đó khi được chọn.
+            LB_shiftinfo.Text = $"Ca {ca}  {currentDate.ToString("dd/MM/yyyy")}";
+            ReadSchools();
+            // Load tên trường lên CB_truong
+            foreach (Truong t in schoolList)
+            {
+                CB_truong.Items.Add(t);
+            }
+        }
+
         private void CB_truong_SelectedIndexChanged(object sender, EventArgs e)
         {
             subjList.Clear();
@@ -126,10 +126,10 @@ namespace Hỗ_Trợ_GV
                 CB_monhoc.Items.Add(m);
             }
         }
-        // Lưu ca học đã đăng ký vào csdl
-        private bool SaveShift()
+        // Hàm thay đổi ca dạy
+        private bool UpdateShift()
         {
-            string query = "INSERT INTO CaHoc VALUES(@CurrentDate, @Ca, @MaMon, @MaTruong, @TenTaiKhoan)";
+            string query = $"update CaHoc set MaMon = '{maMon}', MaTruong = '{maTruong}' where TenDangNhap = '{DangNhap.taiKhoanHienTai.TenDangNhap}' and Ca = '{ca}' and Ngay = '{currentDate}'";
 
             using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
             {
@@ -138,11 +138,6 @@ namespace Hỗ_Trợ_GV
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@CurrentDate", currentDate);
-                        cmd.Parameters.AddWithValue("@Ca", ca);
-                        cmd.Parameters.AddWithValue("@MaMon", maMon);
-                        cmd.Parameters.AddWithValue("@MaTruong", maTruong);
-                        cmd.Parameters.AddWithValue("@TenTaiKhoan", DangNhap.taiKhoanHienTai.TenDangNhap);
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -157,8 +152,8 @@ namespace Hỗ_Trợ_GV
             }
             return true;
         }
-        // Gọi hàm lưu ca học
-        private void BT_save_Click(object sender, EventArgs e)
+
+        private void BTN_sua_Click(object sender, EventArgs e)
         {
             if (CB_truong.SelectedIndex == -1)
             {
@@ -172,14 +167,60 @@ namespace Hỗ_Trợ_GV
             }
             maMon = CB_monhoc.SelectedItem.ToString().Split('-')[0];
             maTruong = CB_truong.SelectedItem.ToString().Split('-')[0];
-            if (SaveShift())
-            { 
-                MessageBox.Show("Đã lưu ca dạy");
+            if (UpdateShift())
+            {
+                MessageBox.Show("Đã thay đổi ca dạy");
             }
             else
             {
-                MessageBox.Show("Lưu thất bại");
+                MessageBox.Show("Thay đổi thất bại");
             }
+        }
+
+        // Hàm xóa ca dạy
+        private bool DeleteShift()
+        {
+            string query = $"delete from CaHoc where TenDangNhap = '{DangNhap.taiKhoanHienTai.TenDangNhap}' and Ca = {ca} and Ngay = '{currentDate}'";
+
+            using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
+            {
+                try
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return false;
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+            return true;
+        }
+
+        private void BT_delete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa ca học này?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                if (DeleteShift())
+                {
+                    MessageBox.Show("Đã xóa ca dạy");
+                    shiftDeleted = true;
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại");
+                }
+            }
+            
         }
     }
 }
