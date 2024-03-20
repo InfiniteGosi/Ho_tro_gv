@@ -160,6 +160,16 @@ namespace Hỗ_Trợ_GV
         // Gọi hàm lưu ca học
         private void BT_save_Click(object sender, EventArgs e)
         {
+            if (CB_truong.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn trường");
+                return;
+            }
+            if (CB_monhoc.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn môn học");
+                return;
+            }
             maMon = CB_monhoc.SelectedItem.ToString().Split('-')[0];
             maTruong = CB_truong.SelectedItem.ToString().Split('-')[0];
             if (SaveShift())
