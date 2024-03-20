@@ -269,7 +269,7 @@ namespace Hỗ_Trợ_GV
             this.LB_d7.Size = new System.Drawing.Size(62, 20);
             this.LB_d7.TabIndex = 22;
             this.LB_d7.Text = "label18";
-            // 
+            //
             // LichDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
