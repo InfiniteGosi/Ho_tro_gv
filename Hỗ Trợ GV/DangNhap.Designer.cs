@@ -53,6 +53,7 @@
             this.TB_MK.Name = "TB_MK";
             this.TB_MK.Size = new System.Drawing.Size(247, 22);
             this.TB_MK.TabIndex = 1;
+            this.TB_MK.UseSystemPasswordChar = true;
             // 
             // label1
             // 
