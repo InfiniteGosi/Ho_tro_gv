@@ -40,8 +40,8 @@ namespace Hỗ_Trợ_GV
                 for (int j = 1; j <= SONGAY; j++)
                 {
                     UserControlBlank ucblank = new UserControlBlank();
-                    ucblank.setCa(i);
-                    ucblank.setCurrentDate(startOfWeek.AddDays(j - 1));
+                    ucblank.SetCa(i);
+                    ucblank.SetCurrentDate(startOfWeek.AddDays(j - 1));
                     FLP_shiftcontainer.Controls.Add(ucblank);
                 }
             }
@@ -53,9 +53,8 @@ namespace Hỗ_Trợ_GV
             int daysToAdd = currentDayOfWeek == DayOfWeek.Sunday ? 6 : (int)currentDayOfWeek - 1;
             startOfWeek = currentDate.AddDays(-daysToAdd);
             endOfWeek = startOfWeek.AddDays(6);
-            int daysInMonth = DateTime.DaysInMonth(startOfWeek.Year, startOfWeek.Month);
 
-            LB_weekinterval.Text = $"{startOfWeek.ToString("dd/MM/yyyy")} - {endOfWeek.ToString("dd/MM/yyyy")}";
+            LB_weekinterval.Text = $"{startOfWeek:dd/MM/yyyy} - {endOfWeek:dd/MM/yyyy}";
             for (int i = 0; i < 7; i++)
             {
                 DateTime currentDay = startOfWeek.AddDays(i);

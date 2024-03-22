@@ -17,12 +17,12 @@ namespace Hỗ_Trợ_GV
         private int ca;
         private DateTime currentDate;
 
-        public void setCa(int ca)
+        public void SetCa(int ca)
         {
             this.ca = ca;
         }
 
-        public void setCurrentDate(DateTime currentDate)
+        public void SetCurrentDate(DateTime currentDate)
         {
             this.currentDate = currentDate;
         }
@@ -84,7 +84,7 @@ namespace Hỗ_Trợ_GV
                     reader.Close();
                     cmd.Dispose();
                 }
-                catch (Exception ex)
+                catch
                 {
                     MessageBox.Show("Connection error");
                 }
@@ -98,6 +98,10 @@ namespace Hỗ_Trợ_GV
         private void UserControlBlank_Load(object sender, EventArgs e)
         {
             DisplayShift();
+            //if (currentDate == DateTime.Today)
+            //{
+            //    this.BackColor = Color.Yellow;
+            //}
         }
 
         // Gọi hàm hiện thông tin ca học trên ô đã chọn mỗi khi lưu ca học mới

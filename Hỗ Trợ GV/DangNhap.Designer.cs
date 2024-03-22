@@ -32,8 +32,8 @@
             this.TB_MK = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnDangNhap = new System.Windows.Forms.Button();
-            this.btnDangKy = new System.Windows.Forms.Button();
+            this.BtnDangNhap = new System.Windows.Forms.Button();
+            this.BtnDangKy = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -77,27 +77,27 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Mật khẩu";
             // 
-            // btnDangNhap
+            // BtnDangNhap
             // 
-            this.btnDangNhap.Location = new System.Drawing.Point(351, 300);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(123, 61);
-            this.btnDangNhap.TabIndex = 4;
-            this.btnDangNhap.Text = "Đăng Nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = true;
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.BtnDangNhap.Location = new System.Drawing.Point(351, 300);
+            this.BtnDangNhap.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnDangNhap.Name = "BtnDangNhap";
+            this.BtnDangNhap.Size = new System.Drawing.Size(123, 61);
+            this.BtnDangNhap.TabIndex = 4;
+            this.BtnDangNhap.Text = "Đăng Nhập";
+            this.BtnDangNhap.UseVisualStyleBackColor = true;
+            this.BtnDangNhap.Click += new System.EventHandler(this.BtnDangNhap_Click);
             // 
-            // btnDangKy
+            // BtnDangKy
             // 
-            this.btnDangKy.Location = new System.Drawing.Point(633, 417);
-            this.btnDangKy.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDangKy.Name = "btnDangKy";
-            this.btnDangKy.Size = new System.Drawing.Size(123, 61);
-            this.btnDangKy.TabIndex = 5;
-            this.btnDangKy.Text = "Đăng Ký";
-            this.btnDangKy.UseVisualStyleBackColor = true;
-            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
+            this.BtnDangKy.Location = new System.Drawing.Point(633, 417);
+            this.BtnDangKy.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnDangKy.Name = "BtnDangKy";
+            this.BtnDangKy.Size = new System.Drawing.Size(123, 61);
+            this.BtnDangKy.TabIndex = 5;
+            this.BtnDangKy.Text = "Đăng Ký";
+            this.BtnDangKy.UseVisualStyleBackColor = true;
+            this.BtnDangKy.Click += new System.EventHandler(this.BtnDangKy_Click);
             // 
             // label3
             // 
@@ -128,8 +128,8 @@
             this.ClientSize = new System.Drawing.Size(835, 505);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnDangKy);
-            this.Controls.Add(this.btnDangNhap);
+            this.Controls.Add(this.BtnDangKy);
+            this.Controls.Add(this.BtnDangNhap);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TB_MK);
@@ -149,8 +149,8 @@
         private System.Windows.Forms.TextBox TB_MK;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.Button btnDangKy;
+        private System.Windows.Forms.Button BtnDangNhap;
+        private System.Windows.Forms.Button BtnDangKy;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }

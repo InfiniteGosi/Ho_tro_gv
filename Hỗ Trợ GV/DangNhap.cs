@@ -19,16 +19,6 @@ namespace Hỗ_Trợ_GV
             InitializeComponent();
         }
 
-        private void btnDangKy_Click(object sender, EventArgs e)
-        {
-            DangKy dk = new DangKy();
-            dk.ShowDialog();
-            // Khi đăng ký thành công sẽ refresh lại trang đăng nhập
-            if (DangKy.getRegisterBtnClicked())
-            {
-                this.Refresh();
-            }
-        }
         public static TaiKhoan taiKhoanHienTai;
         private void GetTaiKhoanHienTai(string tenTaiKhoan)
         {
@@ -45,7 +35,7 @@ namespace Hỗ_Trợ_GV
                         taiKhoanHienTai = new TaiKhoan(reader["TenDangNhap"].ToString(), reader["MatKhau"].ToString(), reader["Email"].ToString());
                     cmd.Dispose();
                 }
-                catch (Exception ex)
+                catch
                 {
                     MessageBox.Show("Connection error");
                 }
@@ -55,7 +45,18 @@ namespace Hỗ_Trợ_GV
                 }
             }
         }
-        private void btnDangNhap_Click(object sender, EventArgs e)
+        private void BtnDangKy_Click(object sender, EventArgs e)
+        {
+            DangKy dk = new DangKy();
+            dk.ShowDialog();
+            // Khi đăng ký thành công sẽ refresh lại trang đăng nhập
+            if (DangKy.getRegisterBtnClicked())
+            {
+                this.Refresh();
+            }
+        }
+
+        private void BtnDangNhap_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True");
             try
@@ -66,7 +67,7 @@ namespace Hỗ_Trợ_GV
                 string sql = "select * from Taikhoan where TenDangNhap = '" + tk + "' and Matkhau = '" + mk + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataReader data = cmd.ExecuteReader();
-                
+
                 if (data.Read() == true)
                 {
                     MessageBox.Show("Đăng nhập thành công");
@@ -86,6 +87,5 @@ namespace Hỗ_Trợ_GV
                 throw new Exception("Kết nối thất bại");
             }
         }
-
     }
 }

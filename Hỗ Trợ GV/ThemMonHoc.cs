@@ -14,7 +14,7 @@ namespace Hỗ_Trợ_GV
 {
     public partial class ThemMonHoc : Form
     {
-        private List<Truong> schoolList = new List<Truong>();
+        private readonly List<Truong> schoolList = new List<Truong>();
         public ThemMonHoc()
         {
             InitializeComponent();
@@ -45,7 +45,7 @@ namespace Hỗ_Trợ_GV
                     reader.Close();
                     cmd.Dispose();
                 }
-                catch (Exception ex)
+                catch
                 {
                     MessageBox.Show("Connection error");
                 }
@@ -84,7 +84,7 @@ namespace Hỗ_Trợ_GV
                         cmd.ExecuteNonQuery();
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
                     return false;
                 }
