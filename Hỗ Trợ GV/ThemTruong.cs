@@ -34,7 +34,7 @@ namespace Hỗ_Trợ_GV
                         cmd.ExecuteNonQuery();
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
                     return false;
                 }

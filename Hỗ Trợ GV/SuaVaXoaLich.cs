@@ -14,12 +14,12 @@ namespace Hỗ_Trợ_GV
 {
     public partial class SuaVaXoaLich : Form
     {
-        private int ca;
-        private DateTime currentDate;
+        private readonly int ca;
+        private readonly DateTime currentDate;
         private string maMon;
         private string maTruong;
-        private List<Truong> schoolList = new List<Truong>();
-        private List<MonHoc> subjList = new List<MonHoc>();
+        private readonly List<Truong> schoolList = new List<Truong>();
+        private readonly List<MonHoc> subjList = new List<MonHoc>();
         public static bool shiftDeleted = false;
         public SuaVaXoaLich()
         {
@@ -56,7 +56,7 @@ namespace Hỗ_Trợ_GV
                     reader.Close();
                     cmd.Dispose();
                 }
-                catch (Exception ex)
+                catch
                 {
                     MessageBox.Show("Connection error");
                 }
@@ -91,7 +91,7 @@ namespace Hỗ_Trợ_GV
                     reader.Close();
                     cmd.Dispose();
                 }
-                catch (Exception ex)
+                catch
                 {
                     MessageBox.Show("Connection error");
                 }
@@ -105,7 +105,7 @@ namespace Hỗ_Trợ_GV
         private void SuaVaXoaLich_Load(object sender, EventArgs e)
         {
             // Hiển thị ngày và ca hiện tại của ô đó khi được chọn.
-            LB_shiftinfo.Text = $"Ca {ca}  {currentDate.ToString("dd/MM/yyyy")}";
+            LB_shiftinfo.Text = $"Ca {ca}  {currentDate:dd/MM/yyyy}";
             ReadSchools();
             // Load tên trường lên CB_truong
             foreach (Truong t in schoolList)
@@ -141,7 +141,7 @@ namespace Hỗ_Trợ_GV
                         cmd.ExecuteNonQuery();
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
                     return false;
                 }
@@ -192,7 +192,7 @@ namespace Hỗ_Trợ_GV
                         cmd.ExecuteNonQuery();
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
                     return false;
                 }
