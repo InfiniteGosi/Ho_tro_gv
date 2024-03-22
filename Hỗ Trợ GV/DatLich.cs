@@ -181,5 +181,17 @@ namespace Hỗ_Trợ_GV
                 MessageBox.Show("Lưu thất bại");
             }
         }
+
+        private void BT_AddSubject_Click(object sender, EventArgs e)
+        {
+            ThemMonHoc form = new ThemMonHoc();
+            form.ShowDialog();
+        }
+
+        private void BT_ThemTruong_Click(object sender, EventArgs e)
+        {
+            ThemTruong formTruong = new ThemTruong();
+            formTruong.ShowDialog();
+        }
     }
 }

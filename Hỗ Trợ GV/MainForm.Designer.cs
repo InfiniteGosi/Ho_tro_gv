@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.LB_xinchao = new System.Windows.Forms.Label();
             this.btn_thongke = new System.Windows.Forms.Button();
             this.btn_tinhluong = new System.Windows.Forms.Button();
             this.bnt_lichday = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_dangxuat = new System.Windows.Forms.Button();
             this.lb_htgv = new System.Windows.Forms.Label();
-            this.LB_xinchao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1220, 49);
             this.panel1.TabIndex = 1;
+            // 
+            // LB_xinchao
+            // 
+            this.LB_xinchao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LB_xinchao.AutoSize = true;
+            this.LB_xinchao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_xinchao.Location = new System.Drawing.Point(967, 13);
+            this.LB_xinchao.Name = "LB_xinchao";
+            this.LB_xinchao.Size = new System.Drawing.Size(58, 22);
+            this.LB_xinchao.TabIndex = 3;
+            this.LB_xinchao.Text = "label1";
             // 
             // btn_thongke
             // 
@@ -135,16 +147,6 @@
             this.lb_htgv.Size = new System.Drawing.Size(158, 25);
             this.lb_htgv.TabIndex = 0;
             this.lb_htgv.Text = "Hỗ trợ giảng viên";
-            // 
-            // LB_xinchao
-            // 
-            this.LB_xinchao.AutoSize = true;
-            this.LB_xinchao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_xinchao.Location = new System.Drawing.Point(1053, 13);
-            this.LB_xinchao.Name = "LB_xinchao";
-            this.LB_xinchao.Size = new System.Drawing.Size(58, 22);
-            this.LB_xinchao.TabIndex = 3;
-            this.LB_xinchao.Text = "label1";
             // 
             // MainForm
             // 
