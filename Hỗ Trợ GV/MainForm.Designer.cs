@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LB_xinchao = new System.Windows.Forms.Label();
             this.btn_thongke = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_dangxuat = new System.Windows.Forms.Button();
             this.lb_htgv = new System.Windows.Forms.Label();
+            this.TM_autoNoti = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -148,6 +150,12 @@
             this.lb_htgv.TabIndex = 0;
             this.lb_htgv.Text = "Hỗ trợ giảng viên";
             // 
+            // TM_autoNoti
+            // 
+            this.TM_autoNoti.Enabled = true;
+            this.TM_autoNoti.Interval = 5000;
+            this.TM_autoNoti.Tick += new System.EventHandler(this.TM_autoNoti_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -178,5 +186,6 @@
         private System.Windows.Forms.Label lb_htgv;
         private System.Windows.Forms.Button btn_dangxuat;
         private System.Windows.Forms.Label LB_xinchao;
+        private System.Windows.Forms.Timer TM_autoNoti;
     }
 }

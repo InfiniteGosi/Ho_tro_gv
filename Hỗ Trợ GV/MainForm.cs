@@ -18,11 +18,16 @@ namespace Hỗ_Trợ_GV
     public partial class MainForm : Form
     {
         public DateTime tomorrowDay = DateTime.Today.AddDays(1);
+        public int notifyTime = 5;
+        public int notifyTimeout = 10000;
+        NotifyIcon notify = new NotifyIcon();
+        public int appTime;
         public MainForm()
         {
             InitializeComponent();
             LB_xinchao.Text = $"Xin chào {DangNhap.taiKhoanHienTai.TenDangNhap}";
-            autoSendEmail();
+            TM_autoNoti.Start();
+            appTime = 0;
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
@@ -261,7 +266,7 @@ namespace Hỗ_Trợ_GV
                 MailMessage message = new MailMessage();
                 message.To.Add(to);
                 message.From = new MailAddress(from);
-                message.Subject = "Thông báo có ca dạy vào ngày: " + tomorrowDay.ToString();
+                message.Subject = "Thông báo có ca dạy vào ngày: " + tomorrowDay.Date.ToString();
                 message.Body = caDay;
 
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com");
@@ -273,7 +278,7 @@ namespace Hỗ_Trợ_GV
                 try
                 {
                     smtp.Send(message);
-                    MessageBox.Show("Quý Thầy/Cô có ca dạy vào ngày " + tomorrowDay.ToString() + "\n Xin hãy check email");
+                    //MessageBox.Show("Quý Thầy/Cô có ca dạy vào ngày " + tomorrowDay.ToString() + "\n Xin hãy check email");
                 }
                 catch (Exception ex)
                 {
@@ -286,6 +291,28 @@ namespace Hỗ_Trợ_GV
                     smtp.Dispose();
                 }
             }
+        }
+        string oldcontent = "";
+        private void TM_autoNoti_Tick(object sender, EventArgs e)
+        {
+            appTime++;
+            // Chưa tới thời gian kiểm tra
+            if (appTime < notifyTime)
+                return;
+
+            string currentContent = readTomorrowShift();
+            if (!oldcontent.Equals(currentContent))
+            {
+                // Update oldcontent
+                oldcontent = currentContent;
+                // Show notification
+                string text = "Quý Thầy/Cô có ca dạy vào ngày " + tomorrowDay.Date.ToString() + "\n Xin hãy check email";
+                MessageBox.Show(text);
+                // Send email
+                autoSendEmail();
+            }
+            // Reset thời gian sau mỗi lần lặp
+            appTime = 0;
         }
     }
 }
