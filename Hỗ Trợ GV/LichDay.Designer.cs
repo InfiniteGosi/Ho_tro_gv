@@ -39,10 +39,10 @@ namespace Hỗ_Trợ_GV
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.LB_Ca1 = new System.Windows.Forms.Label();
+            this.LB_Ca2 = new System.Windows.Forms.Label();
+            this.LB_Ca4 = new System.Windows.Forms.Label();
+            this.LB_Ca3 = new System.Windows.Forms.Label();
             this.LB_weekinterval = new System.Windows.Forms.Label();
             this.LB_d1 = new System.Windows.Forms.Label();
             this.LB_d2 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@ namespace Hỗ_Trợ_GV
             // 
             // FLP_shiftcontainer
             // 
-            this.FLP_shiftcontainer.Location = new System.Drawing.Point(113, 111);
+            this.FLP_shiftcontainer.Location = new System.Drawing.Point(179, 115);
             this.FLP_shiftcontainer.Name = "FLP_shiftcontainer";
             this.FLP_shiftcontainer.Size = new System.Drawing.Size(1394, 534);
             this.FLP_shiftcontainer.TabIndex = 0;
@@ -86,7 +86,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(177, 44);
+            this.label1.Location = new System.Drawing.Point(243, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 22);
             this.label1.TabIndex = 3;
@@ -96,7 +96,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(359, 44);
+            this.label2.Location = new System.Drawing.Point(425, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 22);
             this.label2.TabIndex = 4;
@@ -106,7 +106,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(744, 44);
+            this.label3.Location = new System.Drawing.Point(810, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 22);
             this.label3.TabIndex = 6;
@@ -116,7 +116,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(565, 44);
+            this.label4.Location = new System.Drawing.Point(631, 48);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 22);
             this.label4.TabIndex = 5;
@@ -126,7 +126,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1145, 44);
+            this.label5.Location = new System.Drawing.Point(1211, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 22);
             this.label5.TabIndex = 8;
@@ -136,7 +136,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(944, 44);
+            this.label6.Location = new System.Drawing.Point(1010, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 22);
             this.label6.TabIndex = 7;
@@ -146,51 +146,51 @@ namespace Hỗ_Trợ_GV
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1359, 44);
+            this.label7.Location = new System.Drawing.Point(1425, 48);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 22);
             this.label7.TabIndex = 9;
             this.label7.Text = "Chủ nhật";
             // 
-            // label8
+            // LB_Ca1
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(23, 172);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 22);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Ca 1";
+            this.LB_Ca1.AutoSize = true;
+            this.LB_Ca1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Ca1.Location = new System.Drawing.Point(12, 171);
+            this.LB_Ca1.Name = "LB_Ca1";
+            this.LB_Ca1.Size = new System.Drawing.Size(53, 22);
+            this.LB_Ca1.TabIndex = 10;
+            this.LB_Ca1.Text = " Ca 1";
             // 
-            // label9
+            // LB_Ca2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(23, 313);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 22);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Ca 2";
+            this.LB_Ca2.AutoSize = true;
+            this.LB_Ca2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Ca2.Location = new System.Drawing.Point(17, 287);
+            this.LB_Ca2.Name = "LB_Ca2";
+            this.LB_Ca2.Size = new System.Drawing.Size(48, 22);
+            this.LB_Ca2.TabIndex = 11;
+            this.LB_Ca2.Text = "Ca 2";
             // 
-            // label10
+            // LB_Ca4
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(23, 601);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 22);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Ca 4";
+            this.LB_Ca4.AutoSize = true;
+            this.LB_Ca4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Ca4.Location = new System.Drawing.Point(17, 560);
+            this.LB_Ca4.Name = "LB_Ca4";
+            this.LB_Ca4.Size = new System.Drawing.Size(48, 22);
+            this.LB_Ca4.TabIndex = 13;
+            this.LB_Ca4.Text = "Ca 4";
             // 
-            // label11
+            // LB_Ca3
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(23, 460);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 22);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "Ca 3";
+            this.LB_Ca3.AutoSize = true;
+            this.LB_Ca3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Ca3.Location = new System.Drawing.Point(17, 421);
+            this.LB_Ca3.Name = "LB_Ca3";
+            this.LB_Ca3.Size = new System.Drawing.Size(48, 22);
+            this.LB_Ca3.TabIndex = 12;
+            this.LB_Ca3.Text = "Ca 3";
             // 
             // LB_weekinterval
             // 
@@ -206,7 +206,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d1.AutoSize = true;
             this.LB_d1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d1.Location = new System.Drawing.Point(186, 78);
+            this.LB_d1.Location = new System.Drawing.Point(252, 82);
             this.LB_d1.Name = "LB_d1";
             this.LB_d1.Size = new System.Drawing.Size(62, 20);
             this.LB_d1.TabIndex = 16;
@@ -216,7 +216,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d2.AutoSize = true;
             this.LB_d2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d2.Location = new System.Drawing.Point(364, 78);
+            this.LB_d2.Location = new System.Drawing.Point(430, 82);
             this.LB_d2.Name = "LB_d2";
             this.LB_d2.Size = new System.Drawing.Size(62, 20);
             this.LB_d2.TabIndex = 17;
@@ -226,7 +226,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d3.AutoSize = true;
             this.LB_d3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d3.Location = new System.Drawing.Point(565, 78);
+            this.LB_d3.Location = new System.Drawing.Point(631, 82);
             this.LB_d3.Name = "LB_d3";
             this.LB_d3.Size = new System.Drawing.Size(62, 20);
             this.LB_d3.TabIndex = 18;
@@ -236,7 +236,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d4.AutoSize = true;
             this.LB_d4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d4.Location = new System.Drawing.Point(754, 78);
+            this.LB_d4.Location = new System.Drawing.Point(820, 82);
             this.LB_d4.Name = "LB_d4";
             this.LB_d4.Size = new System.Drawing.Size(62, 20);
             this.LB_d4.TabIndex = 19;
@@ -246,7 +246,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d5.AutoSize = true;
             this.LB_d5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d5.Location = new System.Drawing.Point(958, 78);
+            this.LB_d5.Location = new System.Drawing.Point(1024, 82);
             this.LB_d5.Name = "LB_d5";
             this.LB_d5.Size = new System.Drawing.Size(62, 20);
             this.LB_d5.TabIndex = 20;
@@ -256,7 +256,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d6.AutoSize = true;
             this.LB_d6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d6.Location = new System.Drawing.Point(1159, 78);
+            this.LB_d6.Location = new System.Drawing.Point(1225, 82);
             this.LB_d6.Name = "LB_d6";
             this.LB_d6.Size = new System.Drawing.Size(62, 20);
             this.LB_d6.TabIndex = 21;
@@ -266,7 +266,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_d7.AutoSize = true;
             this.LB_d7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_d7.Location = new System.Drawing.Point(1368, 78);
+            this.LB_d7.Location = new System.Drawing.Point(1434, 82);
             this.LB_d7.Name = "LB_d7";
             this.LB_d7.Size = new System.Drawing.Size(62, 20);
             this.LB_d7.TabIndex = 22;
@@ -274,14 +274,14 @@ namespace Hỗ_Trợ_GV
             // 
             // MC_chonngay
             // 
-            this.MC_chonngay.Location = new System.Drawing.Point(1553, 211);
+            this.MC_chonngay.Location = new System.Drawing.Point(1583, 207);
             this.MC_chonngay.Name = "MC_chonngay";
             this.MC_chonngay.TabIndex = 23;
             this.MC_chonngay.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.MC_chonngay_DateChanged);
             // 
             // BTN_homnay
             // 
-            this.BTN_homnay.Location = new System.Drawing.Point(1631, 450);
+            this.BTN_homnay.Location = new System.Drawing.Point(1669, 426);
             this.BTN_homnay.Name = "BTN_homnay";
             this.BTN_homnay.Size = new System.Drawing.Size(99, 46);
             this.BTN_homnay.TabIndex = 24;
@@ -304,10 +304,10 @@ namespace Hỗ_Trợ_GV
             this.Controls.Add(this.LB_d2);
             this.Controls.Add(this.LB_d1);
             this.Controls.Add(this.LB_weekinterval);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.LB_Ca4);
+            this.Controls.Add(this.LB_Ca3);
+            this.Controls.Add(this.LB_Ca2);
+            this.Controls.Add(this.LB_Ca1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -338,10 +338,10 @@ namespace Hỗ_Trợ_GV
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label LB_Ca1;
+        private System.Windows.Forms.Label LB_Ca2;
+        private System.Windows.Forms.Label LB_Ca4;
+        private System.Windows.Forms.Label LB_Ca3;
         private System.Windows.Forms.Label LB_weekinterval;
         private System.Windows.Forms.Label LB_d1;
         private System.Windows.Forms.Label LB_d2;

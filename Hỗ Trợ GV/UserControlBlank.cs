@@ -16,6 +16,7 @@ namespace Hỗ_Trợ_GV
     {
         private int ca;
         private DateTime currentDate;
+        private Color tmpColor;
 
         public void SetCa(int ca)
         {
@@ -50,12 +51,16 @@ namespace Hỗ_Trợ_GV
         // Hover các ô sẽ có hiệu ứng đổi màu
         private void UserControlBlank_MouseEnter(object sender, EventArgs e)
         {
-            this.BackColor = Color.Silver;
+            tmpColor = this.BackColor;
+            if (this.BackColor == Color.White)
+            {
+                this.BackColor = Color.Silver;
+            }
         }
 
         private void UserControlBlank_MouseLeave(object sender, EventArgs e)
         {
-            this.BackColor = Color.White;
+            this.BackColor = tmpColor;
         }
         // Hàm đọc thông tin ca học từ csdl và hiện thông tin ca học của một ô
         private void DisplayShift()
@@ -75,7 +80,11 @@ namespace Hỗ_Trợ_GV
 
                     if (reader.Read())
                     {
-                        LB_shift.Text = String.Format("{0}\n{1}", reader["TenTruong"].ToString(), reader["TenMon"].ToString());
+                        LB_shift.MaximumSize = new Size(100, 0);
+                        LB_shift.AutoSize = true;
+                        LB_shift.Text = String.Format("Trường: {0}\nMôn: {1}", reader["TenTruong"].ToString(), reader["TenMon"].ToString());
+                        Color selectedColor = Color.FromName(reader["Mau"].ToString());
+                        this.BackColor = selectedColor;
                     }
                     else
                     {
@@ -98,10 +107,6 @@ namespace Hỗ_Trợ_GV
         private void UserControlBlank_Load(object sender, EventArgs e)
         {
             DisplayShift();
-            //if (currentDate == DateTime.Today)
-            //{
-            //    this.BackColor = Color.Yellow;
-            //}
         }
 
         // Gọi hàm hiện thông tin ca học trên ô đã chọn mỗi khi lưu ca học mới

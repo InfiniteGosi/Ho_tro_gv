@@ -18,6 +18,7 @@ namespace Hỗ_Trợ_GV
         private readonly DateTime currentDate;
         private string maMon;
         private string maTruong;
+        private string mau;
         private readonly List<Truong> schoolList = new List<Truong>();
         private readonly List<MonHoc> subjList = new List<MonHoc>();
         public static bool shiftDeleted = false;
@@ -30,6 +31,13 @@ namespace Hỗ_Trợ_GV
             InitializeComponent();
             this.ca = ca;
             this.currentDate = currentDate;
+
+            AddColorToCBColor();
+            CB_color.MaxDropDownItems = 10;
+            CB_color.IntegralHeight = false;
+            CB_color.DrawMode = DrawMode.OwnerDrawFixed;
+            CB_color.DropDownStyle = ComboBoxStyle.DropDownList;
+            CB_color.DrawItem += CB_color_DrawItem;
         }
         // Đọc thông tin trường từ csdl và tạo object mới từ lớp trường
         private void ReadSchools()
@@ -113,7 +121,7 @@ namespace Hỗ_Trợ_GV
                 CB_truong.Items.Add(t);
             }
         }
-
+        // Thêm môn học tương ứng với mỗi trường vào CB_monhoc
         private void CB_truong_SelectedIndexChanged(object sender, EventArgs e)
         {
             subjList.Clear();
@@ -129,7 +137,7 @@ namespace Hỗ_Trợ_GV
         // Hàm thay đổi ca dạy
         private bool UpdateShift()
         {
-            string query = $"update CaHoc set MaMon = '{maMon}', MaTruong = '{maTruong}' where TenDangNhap = '{DangNhap.taiKhoanHienTai.TenDangNhap}' and Ca = '{ca}' and Ngay = '{currentDate}'";
+            string query = $"update CaHoc set MaMon = '{maMon}', MaTruong = '{maTruong}', Mau = '{mau}' where TenDangNhap = '{DangNhap.taiKhoanHienTai.TenDangNhap}' and Ca = '{ca}' and Ngay = '{currentDate}'";
 
             using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
             {
@@ -152,9 +160,47 @@ namespace Hỗ_Trợ_GV
             }
             return true;
         }
+        // Cập nhật màu
+        private bool UpdateColor()
+        {
+            string query = $"update CaHoc set Mau = '{mau}' where TenDangNhap = '{DangNhap.taiKhoanHienTai.TenDangNhap}' and Ca = '{ca}' and Ngay = '{currentDate}'";
 
+            using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
+            {
+                try
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch
+                {
+                    return false;
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+            return true;
+        }
+        // Gọi hàm sửa lịch
         private void BTN_sua_Click(object sender, EventArgs e)
         {
+            if (CB_color.SelectedIndex != -1 && CB_truong.SelectedIndex == -1 && CB_monhoc.SelectedIndex == -1)
+            {
+                if (UpdateColor())
+                {
+                    MessageBox.Show("Đã thay đổi màu ca dạy");
+                }
+                else
+                {
+                    MessageBox.Show("Thay đổi thất bại");
+                }
+                return;
+            }
             if (CB_truong.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng chọn trường");
@@ -203,7 +249,7 @@ namespace Hỗ_Trợ_GV
             }
             return true;
         }
-
+        // Gọi hàm xóa lịch
         private void BT_delete_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa ca học này?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -221,6 +267,45 @@ namespace Hỗ_Trợ_GV
                 }
             }
             
+        }
+        // Chọn màu của CB_color
+        private void CB_color_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Color color = (Color)CB_color.SelectedItem;
+            mau = color.Name;
+        }
+        // Thêm màu vào CB_color, đã thêm 4 màu
+        private void AddColorToCBColor()
+        {
+            string[] specificColors = { "Cyan", "SpringGreen", "LightCoral", "LightYellow" };
+
+            var selectedColors = typeof(Color).GetProperties()
+                .Where(x => x.PropertyType == typeof(Color) && specificColors.Contains(x.Name))
+                .Select(x => (Color)x.GetValue(null))
+                .ToList();
+
+            CB_color.DataSource = selectedColors;
+
+            CB_color.SelectedIndex = 0;
+        }
+        // Vẽ các ô màu của CB_color
+        private void CB_color_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            e.DrawBackground();
+            if (e.Index >= 0)
+            {
+                var txt = CB_color.GetItemText(CB_color.Items[e.Index]);
+                var color = (Color)CB_color.Items[e.Index];
+                var r1 = new Rectangle(e.Bounds.Left + 1, e.Bounds.Top + 1,
+                    2 * (e.Bounds.Height - 2), e.Bounds.Height - 2);
+                var r2 = Rectangle.FromLTRB(r1.Right + 2, e.Bounds.Top,
+                    e.Bounds.Right, e.Bounds.Bottom);
+                using (var b = new SolidBrush(color))
+                    e.Graphics.FillRectangle(b, r1);
+                e.Graphics.DrawRectangle(Pens.Black, r1);
+                TextRenderer.DrawText(e.Graphics, txt, CB_color.Font, r2,
+                    CB_color.ForeColor, TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
+            }
         }
     }
 }
