@@ -160,10 +160,11 @@ namespace Hỗ_Trợ_GV
 
             if (TB_Code.Text.Equals(num.ToString()))
             {
-                cmd = new SqlCommand("insert into TaiKhoan values('" + tenDangNhap + "','" + TB_Pass.Text + "', '" + TB_NhapEmail.Text + "')", conn);
+                cmd = new SqlCommand("insert into TaiKhoan values('" + tenDangNhap + "','" + TB_NhapEmail.Text + "', '" + TB_Pass.Text + "')", conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Đã đăng ký thành công tài khoản, vui lòng quay trở lại trang đăng nhập");
                 registerBtnClicked = true;
+                this.Close();
             }
             conn.Close();
         }
