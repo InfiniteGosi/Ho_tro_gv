@@ -7,15 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Hỗ_Trợ_GV.Model;
+using System.Net.Mail;
+using System.Net;
+
 
 namespace Hỗ_Trợ_GV
 {
     public partial class MainForm : Form
     {
+        public DateTime tomorrowDay = DateTime.Today.AddDays(1);
         public MainForm()
         {
             InitializeComponent();
             LB_xinchao.Text = $"Xin chào {DangNhap.taiKhoanHienTai.TenDangNhap}";
+            autoSendEmail();
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
@@ -199,6 +206,86 @@ namespace Hỗ_Trợ_GV
 
             // Center the table
             oSheet.get_Range(c1, c2).HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
+        }
+
+        // Check exist shift in tomorrow
+        public string readTomorrowShift()
+        {
+            StringBuilder content = new StringBuilder();
+
+            string query = "SELECT ch.MaMon, mh.TenMon, t.TenTruong, ch.Ca FROM cahoc ch " +
+                           "JOIN MonHoc mh ON ch.MaMon = mh.MaMon " +
+                           "JOIN Truong t ON ch.MaTruong = t.MaTruong " +
+                           "WHERE ch.TenDangNhap = @TenDangNhap AND ch.Ngay = @TomorrowDate";
+
+            using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                try
+                {
+                    cmd.Parameters.AddWithValue("@TenDangNhap", DangNhap.taiKhoanHienTai.TenDangNhap);
+                    cmd.Parameters.AddWithValue("@TomorrowDate", tomorrowDay.Date);
+
+                    conn.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        string maMon = reader["MaMon"].ToString();
+                        string tenMon = reader["TenMon"].ToString();
+                        string tenTruong = reader["TenTruong"].ToString();
+                        string caDay = reader["Ca"].ToString();
+                        content.AppendLine("Mã môn: " + maMon + " - Tên môn: " + tenMon + " - Trường: " + tenTruong + " - Ca:" + caDay);
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+
+            return content.ToString();
+        }
+
+        // Automatically send email
+        public void autoSendEmail()
+        {
+            string caDay = readTomorrowShift();
+            // if tomorrow has shifts
+            if (!string.IsNullOrEmpty(caDay))
+            {
+                string to, from, pass;
+                to = DangNhap.taiKhoanHienTai.Email.ToString();
+                from = "duyenman19@gmail.com";
+                pass = "xglr vuyt mzre mmlp";
+                MailMessage message = new MailMessage();
+                message.To.Add(to);
+                message.From = new MailAddress(from);
+                message.Subject = "Thông báo có ca dạy vào ngày: " + tomorrowDay.ToString();
+                message.Body = caDay;
+
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                smtp.UseDefaultCredentials = false;
+                smtp.EnableSsl = true;
+                smtp.Port = 587;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.Credentials = new NetworkCredential(from, pass);
+                try
+                {
+                    smtp.Send(message);
+                    MessageBox.Show("Quý Thầy/Cô có ca dạy vào ngày " + tomorrowDay.ToString() + "\n Xin hãy check email");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Có lỗi khi gửi mã xác nhận: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    // Dispose of resources
+                    message.Dispose();
+                    smtp.Dispose();
+                }
+            }
         }
     }
 }

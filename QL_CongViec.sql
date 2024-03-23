@@ -80,3 +80,6 @@ FROM MonHoc mh INNER JOIN Truong t ON mh.MaTruong = t.MaTruong INNER JOIN CaHoc 
 Where ch.TenDangNhap like 'Khangho150'
 GROUP BY mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay
 
+select ch.MaMon, mh.TenMon, t.TenTruong, ch.Ca
+from cahoc ch, MonHoc mh, Truong t 
+where ch.MaMon = mh.MaMon and ch.MaTruong = t.MaTruong and ch.TenDangNhap = 'khangho150' and ch.Ngay = '3/24/2024'
