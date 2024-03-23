@@ -30,6 +30,11 @@ namespace Hỗ_Trợ_GV
             GetCell();
             MC_chonngay.FirstDayOfWeek = Day.Monday;
             BTN_homnay.Click += BTN_homnay_Click;
+
+            LB_Ca1.Text = "Ca1\n(6H50 - 9H30)";
+            LB_Ca2.Text = "Ca2\n(9H30 - 12H)";
+            LB_Ca3.Text = "Ca3\n(12H45 - 15H15)";
+            LB_Ca4.Text = "Ca4\n(15H15 - 18H)";
         }
         
         // Thêm các cell vào tổng có 28 cell

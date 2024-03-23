@@ -123,6 +123,8 @@
             this.CB_color.Name = "CB_color";
             this.CB_color.Size = new System.Drawing.Size(151, 24);
             this.CB_color.TabIndex = 13;
+            this.CB_color.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.CB_color_DrawItem);
+            this.CB_color.SelectedIndexChanged += new System.EventHandler(this.CB_color_SelectedIndexChanged);
             // 
             // SuaVaXoaLich
             // 

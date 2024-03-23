@@ -38,7 +38,7 @@
             // 
             this.LB_shift.AutoSize = true;
             this.LB_shift.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_shift.Location = new System.Drawing.Point(3, 45);
+            this.LB_shift.Location = new System.Drawing.Point(39, 36);
             this.LB_shift.Name = "LB_shift";
             this.LB_shift.Size = new System.Drawing.Size(0, 16);
             this.LB_shift.TabIndex = 0;
