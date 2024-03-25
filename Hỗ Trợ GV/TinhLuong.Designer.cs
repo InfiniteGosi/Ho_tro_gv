@@ -32,6 +32,10 @@ namespace Hỗ_Trợ_GV
             this.dataGV_TinhLuong = new System.Windows.Forms.DataGridView();
             this.BT_LoadData = new System.Windows.Forms.Button();
             this.BT_ExportExcel = new System.Windows.Forms.Button();
+            this.dTP_TuNgay = new System.Windows.Forms.DateTimePicker();
+            this.dTP_DenNgay = new System.Windows.Forms.DateTimePicker();
+            this.LB_TuNgay = new System.Windows.Forms.Label();
+            this.LB_DenNgay = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_TinhLuong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,11 +75,51 @@ namespace Hỗ_Trợ_GV
             this.BT_ExportExcel.UseVisualStyleBackColor = true;
             this.BT_ExportExcel.Click += new System.EventHandler(this.BT_ExportExcel_Click);
             // 
+            // dTP_TuNgay
+            // 
+            this.dTP_TuNgay.CustomFormat = "yyyy-MM-dd";
+            this.dTP_TuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dTP_TuNgay.Location = new System.Drawing.Point(318, 71);
+            this.dTP_TuNgay.Name = "dTP_TuNgay";
+            this.dTP_TuNgay.Size = new System.Drawing.Size(116, 22);
+            this.dTP_TuNgay.TabIndex = 3;
+            // 
+            // dTP_DenNgay
+            // 
+            this.dTP_DenNgay.CustomFormat = "yyyy-MM-dd";
+            this.dTP_DenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dTP_DenNgay.Location = new System.Drawing.Point(575, 70);
+            this.dTP_DenNgay.Name = "dTP_DenNgay";
+            this.dTP_DenNgay.Size = new System.Drawing.Size(116, 22);
+            this.dTP_DenNgay.TabIndex = 4;
+            // 
+            // LB_TuNgay
+            // 
+            this.LB_TuNgay.AutoSize = true;
+            this.LB_TuNgay.Location = new System.Drawing.Point(256, 75);
+            this.LB_TuNgay.Name = "LB_TuNgay";
+            this.LB_TuNgay.Size = new System.Drawing.Size(56, 16);
+            this.LB_TuNgay.TabIndex = 5;
+            this.LB_TuNgay.Text = "Từ ngày";
+            // 
+            // LB_DenNgay
+            // 
+            this.LB_DenNgay.AutoSize = true;
+            this.LB_DenNgay.Location = new System.Drawing.Point(505, 73);
+            this.LB_DenNgay.Name = "LB_DenNgay";
+            this.LB_DenNgay.Size = new System.Drawing.Size(64, 16);
+            this.LB_DenNgay.TabIndex = 6;
+            this.LB_DenNgay.Text = "Đến ngày";
+            // 
             // TinhLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1202, 583);
+            this.Controls.Add(this.LB_DenNgay);
+            this.Controls.Add(this.LB_TuNgay);
+            this.Controls.Add(this.dTP_DenNgay);
+            this.Controls.Add(this.dTP_TuNgay);
             this.Controls.Add(this.BT_ExportExcel);
             this.Controls.Add(this.BT_LoadData);
             this.Controls.Add(this.dataGV_TinhLuong);
@@ -85,6 +129,7 @@ namespace Hỗ_Trợ_GV
             this.Load += new System.EventHandler(this.TinhLuong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_TinhLuong)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -93,5 +138,9 @@ namespace Hỗ_Trợ_GV
         private System.Windows.Forms.DataGridView dataGV_TinhLuong;
         private System.Windows.Forms.Button BT_LoadData;
         private System.Windows.Forms.Button BT_ExportExcel;
+        private System.Windows.Forms.DateTimePicker dTP_TuNgay;
+        private System.Windows.Forms.DateTimePicker dTP_DenNgay;
+        private System.Windows.Forms.Label LB_TuNgay;
+        private System.Windows.Forms.Label LB_DenNgay;
     }
 }
