@@ -89,6 +89,7 @@ namespace Hỗ_Trợ_GV
                     else
                     {
                         LB_shift.Text = "";
+                        this.BackColor= Color.White;
                     }
                     reader.Close();
                     cmd.Dispose();

@@ -35,13 +35,23 @@ namespace Hỗ_Trợ_GV
             {
                 dt = new DataTable();
                 con.Open();
-                String tenDangNhap = DangNhap.taiKhoanHienTai.TenDangNhap;
-                cmd = new SqlCommand("SELECT mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay, COUNT(ch.Ngay) AS SoCaHoc, (t.Luong1CaDay * COUNT(ch.Ngay)) AS TongLuongTheoMon, SUM(t.Luong1CaDay * COUNT(ch.Ngay)) OVER () AS LuongTong \r\nFROM MonHoc mh INNER JOIN Truong t ON mh.MaTruong = t.MaTruong INNER JOIN CaHoc ch ON mh.MaMon = ch.MaMon \r\nWhere ch.TenDangNhap like '"+ tenDangNhap +"'\r\nGROUP BY mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay", con);
+                // Sử dụng tham số @TuNgay và @DenNgay trong câu truy vấn SQL
+                cmd = new SqlCommand("SELECT mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay, COUNT(ch.Ngay) AS SoCaHoc, " +
+                                     "(t.Luong1CaDay * COUNT(ch.Ngay)) AS TongLuongTheoMon, " +
+                                     "SUM(t.Luong1CaDay * COUNT(ch.Ngay)) OVER () AS LuongTong " +
+                                     "FROM MonHoc mh " +
+                                     "INNER JOIN Truong t ON mh.MaTruong = t.MaTruong " +
+                                     "INNER JOIN CaHoc ch ON mh.MaMon = ch.MaMon " +
+                                     "WHERE ch.TenDangNhap = @TenDangNhap AND ch.Ngay BETWEEN @TuNgay AND @DenNgay " +
+                                     "GROUP BY mh.MaMon, mh.TenMon, t.TenTruong, t.Luong1CaDay", con);
+
+                // Thêm các tham số vào câu truy vấn SQL
+                cmd.Parameters.AddWithValue("@TenDangNhap", DangNhap.taiKhoanHienTai.TenDangNhap);
+                cmd.Parameters.AddWithValue("@TuNgay", dTP_TuNgay.Text);
+                cmd.Parameters.AddWithValue("@DenNgay", dTP_DenNgay.Text);
+
                 adt = new SqlDataAdapter(cmd);
                 adt.Fill(dt);
-                // cmd = new SqlCommand("SELECT SUM(T.Luong1CaDay * MH.SoCaDay) AS TotalSalary FROM Truong T JOIN MonHoc MH ON T.MaTruong = MH.MaTruong",con);
-                // adt = new SqlDataAdapter(cmd);
-                // adt.Fill(dt);
                 dataGV_TinhLuong.DataSource = dt;
                 con.Close();
             }
