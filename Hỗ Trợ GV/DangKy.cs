@@ -11,6 +11,8 @@ using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
 using System.Net;
+using System.Security.Cryptography;
+using System.IO;
 
 namespace Hỗ_Trợ_GV
 {
@@ -141,9 +143,35 @@ namespace Hỗ_Trợ_GV
 
         // Lấy trạng thái đăng ký thành công để refresh lại trang đăng nhập
         private static bool registerBtnClicked = false;
-        public static bool getRegisterBtnClicked()
+        public static bool GetRegisterBtnClicked()
         {
             return registerBtnClicked;
+        }
+        private string Encrypt(string pwd)
+        {
+            using (Aes aesAlg = Aes.Create())
+            {
+                byte[] fixedKey = new byte[] {
+                    0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
+                    0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10
+                };
+                aesAlg.Key = Encoding.UTF8.GetBytes(Convert.ToBase64String(fixedKey));
+                aesAlg.IV = new byte[16];
+
+                ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
+
+                using (MemoryStream msEncrypt = new MemoryStream())
+                {
+                    using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                    {
+                        using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
+                        {
+                            swEncrypt.Write(pwd);
+                        }
+                        return Convert.ToBase64String(msEncrypt.ToArray());
+                    }
+                }
+            }
         }
         private void btn_Register_Click(object sender, EventArgs e)
         {
@@ -160,7 +188,7 @@ namespace Hỗ_Trợ_GV
 
             if (TB_Code.Text.Equals(num.ToString()))
             {
-                cmd = new SqlCommand("insert into TaiKhoan values('" + tenDangNhap + "','" + TB_NhapEmail.Text + "', '" + TB_Pass.Text + "')", conn);
+                cmd = new SqlCommand("insert into TaiKhoan values('" + tenDangNhap + "','" + TB_NhapEmail.Text + "', '" + Encrypt(TB_Pass.Text) + "')", conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Đã đăng ký thành công tài khoản, vui lòng quay trở lại trang đăng nhập");
                 registerBtnClicked = true;
