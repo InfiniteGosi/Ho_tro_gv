@@ -117,10 +117,16 @@ namespace Hỗ_Trợ_GV
                     {
                         encryptedPwd = reader["Matkhau"].ToString();
                     }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản không tồn tại, vui lòng đăng ký");
+                        return;
+                    }
                 }
                 catch
                 {
                     MessageBox.Show("Kết nối thất bại");
+                    return;
                 }
             }
 
