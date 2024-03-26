@@ -20,6 +20,10 @@ namespace Hỗ_Trợ_GV
         private bool SaveSchool()
         {
             string query = "INSERT INTO Truong VALUES(@MaTruong, @TenTruong, @Luong1CaDay)";
+            if (string.IsNullOrEmpty(TB_Luong1Ca.Text)) 
+            {
+                return false;  
+            }
             int luong1CaDay = Convert.ToInt32(TB_Luong1Ca.Text);
             using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
             {
@@ -51,15 +55,15 @@ namespace Hỗ_Trợ_GV
             {
                 MessageBox.Show("Vui lòng điền vào mã trường");
             }
-            if (TB_TenTruong.Text.Length == 0)
+            else if (TB_TenTruong.Text.Length == 0)
             {
                 MessageBox.Show("Vui lòng điền vào tên trường");
             }
-            if (TB_Luong1Ca.Text.Length == 0)
+            else if (TB_Luong1Ca.Text.Length == 0)
             {
                 MessageBox.Show("Vui lòng điền vào lương 1 ca dạy");
             }
-            if (SaveSchool())
+            else if (SaveSchool())
             {
                 MessageBox.Show("Lưu thành công");
                 this.Close();
