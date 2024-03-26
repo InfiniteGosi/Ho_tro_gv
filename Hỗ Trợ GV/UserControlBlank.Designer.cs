@@ -40,8 +40,9 @@
             this.LB_shift.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_shift.Location = new System.Drawing.Point(39, 36);
             this.LB_shift.Name = "LB_shift";
-            this.LB_shift.Size = new System.Drawing.Size(0, 16);
+            this.LB_shift.Size = new System.Drawing.Size(0, 17);
             this.LB_shift.TabIndex = 0;
+            this.LB_shift.Click += new System.EventHandler(this.LB_shift_Click);
             // 
             // TM_datlich
             // 

@@ -69,6 +69,11 @@ namespace Hỗ_Trợ_GV
 
         private bool SaveSubject()
         {
+            if (TB_MaMon.TextLength > 10)
+            {
+                MessageBox.Show("Mã môn không hợp lệ ( ít hơn 11 kí tự)");
+                return false;
+            }
             string query = "INSERT INTO MonHoc VALUES(@MaMon, @TenMon, @MaTruong)";
             string maTruong = CB_Truong.SelectedItem.ToString().Split('-')[0];
             using (SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CongViec;Integrated Security=True;TrustServerCertificate=True"))
@@ -104,18 +109,18 @@ namespace Hỗ_Trợ_GV
                 return;
             }
 
-            if (TB_TenMon.Text.Length == 0)
+            else if (TB_TenMon.Text.Length == 0)
             {
                 MessageBox.Show("Vui lòng điền tên môn học");
             }
 
-            if (CB_Truong.SelectedIndex == -1)
+            else if (CB_Truong.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng chọn trường");
                 return;
             }
 
-            if (SaveSubject())
+            else if (SaveSubject())
             {
                 MessageBox.Show("Thêm môn học thành công");
                 this.Close();
