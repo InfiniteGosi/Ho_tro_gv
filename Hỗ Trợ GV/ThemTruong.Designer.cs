@@ -36,82 +36,150 @@
             this.TB_Luong1Ca = new System.Windows.Forms.TextBox();
             this.BT_Save = new System.Windows.Forms.Button();
             this.LB_ThemTruongTitle = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // LB_MaTruong
             // 
+            this.LB_MaTruong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_MaTruong.AutoSize = true;
-            this.LB_MaTruong.Location = new System.Drawing.Point(97, 114);
+            this.LB_MaTruong.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_MaTruong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.LB_MaTruong.Location = new System.Drawing.Point(32, 98);
             this.LB_MaTruong.Name = "LB_MaTruong";
-            this.LB_MaTruong.Size = new System.Drawing.Size(72, 16);
+            this.LB_MaTruong.Size = new System.Drawing.Size(80, 26);
             this.LB_MaTruong.TabIndex = 0;
-            this.LB_MaTruong.Text = "Mã Trường";
+            this.LB_MaTruong.Text = "Mã Trường:";
             // 
             // LB_TenTruong
             // 
+            this.LB_TenTruong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_TenTruong.AutoSize = true;
-            this.LB_TenTruong.Location = new System.Drawing.Point(97, 193);
+            this.LB_TenTruong.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_TenTruong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.LB_TenTruong.Location = new System.Drawing.Point(32, 190);
             this.LB_TenTruong.Name = "LB_TenTruong";
-            this.LB_TenTruong.Size = new System.Drawing.Size(77, 16);
+            this.LB_TenTruong.Size = new System.Drawing.Size(83, 26);
             this.LB_TenTruong.TabIndex = 1;
-            this.LB_TenTruong.Text = "Tên Trường";
+            this.LB_TenTruong.Text = "Tên Trường:";
             // 
             // LB_Luong1Ca
             // 
+            this.LB_Luong1Ca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_Luong1Ca.AutoSize = true;
-            this.LB_Luong1Ca.Location = new System.Drawing.Point(97, 274);
+            this.LB_Luong1Ca.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Luong1Ca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.LB_Luong1Ca.Location = new System.Drawing.Point(32, 282);
             this.LB_Luong1Ca.Name = "LB_Luong1Ca";
-            this.LB_Luong1Ca.Size = new System.Drawing.Size(98, 16);
+            this.LB_Luong1Ca.Size = new System.Drawing.Size(109, 26);
             this.LB_Luong1Ca.TabIndex = 2;
-            this.LB_Luong1Ca.Text = "Lương 1 ca dạy";
+            this.LB_Luong1Ca.Text = "Lương 1 Ca Dạy:";
             // 
             // TB_MaTruong
             // 
-            this.TB_MaTruong.Location = new System.Drawing.Point(230, 107);
+            this.TB_MaTruong.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_MaTruong.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_MaTruong.Location = new System.Drawing.Point(158, 103);
             this.TB_MaTruong.Name = "TB_MaTruong";
-            this.TB_MaTruong.Size = new System.Drawing.Size(344, 22);
+            this.TB_MaTruong.Size = new System.Drawing.Size(164, 28);
             this.TB_MaTruong.TabIndex = 3;
             // 
             // TB_TenTruong
             // 
-            this.TB_TenTruong.Location = new System.Drawing.Point(230, 193);
+            this.TB_TenTruong.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_TenTruong.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TenTruong.Location = new System.Drawing.Point(158, 195);
             this.TB_TenTruong.Name = "TB_TenTruong";
-            this.TB_TenTruong.Size = new System.Drawing.Size(344, 22);
+            this.TB_TenTruong.Size = new System.Drawing.Size(344, 28);
             this.TB_TenTruong.TabIndex = 4;
             // 
             // TB_Luong1Ca
             // 
-            this.TB_Luong1Ca.Location = new System.Drawing.Point(230, 268);
+            this.TB_Luong1Ca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TB_Luong1Ca.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Luong1Ca.Location = new System.Drawing.Point(158, 287);
             this.TB_Luong1Ca.Name = "TB_Luong1Ca";
-            this.TB_Luong1Ca.Size = new System.Drawing.Size(344, 22);
+            this.TB_Luong1Ca.Size = new System.Drawing.Size(344, 28);
             this.TB_Luong1Ca.TabIndex = 5;
             // 
             // BT_Save
             // 
-            this.BT_Save.Location = new System.Drawing.Point(485, 321);
+            this.BT_Save.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BT_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.BT_Save.FlatAppearance.BorderSize = 0;
+            this.BT_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Save.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_Save.ForeColor = System.Drawing.Color.White;
+            this.BT_Save.Location = new System.Drawing.Point(443, 362);
             this.BT_Save.Name = "BT_Save";
-            this.BT_Save.Size = new System.Drawing.Size(89, 35);
+            this.BT_Save.Size = new System.Drawing.Size(91, 43);
             this.BT_Save.TabIndex = 6;
             this.BT_Save.Text = "Lưu";
-            this.BT_Save.UseVisualStyleBackColor = true;
+            this.BT_Save.UseVisualStyleBackColor = false;
             this.BT_Save.Click += new System.EventHandler(this.BT_Save_Click);
             // 
             // LB_ThemTruongTitle
             // 
+            this.LB_ThemTruongTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_ThemTruongTitle.AutoSize = true;
-            this.LB_ThemTruongTitle.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_ThemTruongTitle.Location = new System.Drawing.Point(178, 9);
+            this.LB_ThemTruongTitle.Font = new System.Drawing.Font("GMV DIN Pro Cond", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_ThemTruongTitle.ForeColor = System.Drawing.Color.White;
+            this.LB_ThemTruongTitle.Location = new System.Drawing.Point(0, 0);
             this.LB_ThemTruongTitle.Name = "LB_ThemTruongTitle";
-            this.LB_ThemTruongTitle.Size = new System.Drawing.Size(386, 68);
+            this.LB_ThemTruongTitle.Size = new System.Drawing.Size(174, 43);
             this.LB_ThemTruongTitle.TabIndex = 7;
-            this.LB_ThemTruongTitle.Text = "Thêm Trường";
+            this.LB_ThemTruongTitle.Text = "THÊM TRƯỜNG";
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.panel4.Location = new System.Drawing.Point(12, 350);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(522, 1);
+            this.panel4.TabIndex = 24;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.panel3.Location = new System.Drawing.Point(533, 23);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1, 328);
+            this.panel3.TabIndex = 23;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.panel1.Location = new System.Drawing.Point(12, 22);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 328);
+            this.panel1.TabIndex = 22;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.panel2.Controls.Add(this.LB_ThemTruongTitle);
+            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(522, 42);
+            this.panel2.TabIndex = 21;
             // 
             // ThemTruong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 387);
-            this.Controls.Add(this.LB_ThemTruongTitle);
+            this.ClientSize = new System.Drawing.Size(549, 416);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.BT_Save);
             this.Controls.Add(this.TB_Luong1Ca);
             this.Controls.Add(this.TB_TenTruong);
@@ -121,6 +189,8 @@
             this.Controls.Add(this.LB_MaTruong);
             this.Name = "ThemTruong";
             this.Text = "ThemTruong";
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +206,9 @@
         private System.Windows.Forms.TextBox TB_Luong1Ca;
         private System.Windows.Forms.Button BT_Save;
         private System.Windows.Forms.Label LB_ThemTruongTitle;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

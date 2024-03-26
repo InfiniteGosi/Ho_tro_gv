@@ -196,5 +196,77 @@ namespace Hỗ_Trợ_GV
             }
             conn.Close();
         }
+
+        private void TB_NhapEmail_Enter(object sender, EventArgs e)
+        {
+            if (TB_NhapEmail.Text == "Email")
+            {
+                TB_NhapEmail.Text = "";
+                TB_NhapEmail.ForeColor = Color.Black;
+            }
+        }
+
+        private void TB_NhapEmail_Leave(object sender, EventArgs e)
+        {
+            if (TB_NhapEmail.Text == "")
+            {
+                TB_NhapEmail.Text = "Email";
+                TB_NhapEmail.ForeColor = Color.Silver;
+            }
+        }
+
+        private void TB_Pass_Enter(object sender, EventArgs e)
+        {
+            if (TB_Pass.Text == "Mật khẩu")
+            {
+                TB_Pass.Text = "";
+                TB_Pass.ForeColor = Color.Black;
+            }
+        }
+
+        private void TB_Pass_Leave(object sender, EventArgs e)
+        {
+            if (TB_Pass.Text == "")
+            {
+                TB_Pass.Text = "Mật khẩu";
+                TB_Pass.ForeColor = Color.Silver;
+            }
+        }
+
+        private void TB_PassVerify_Enter(object sender, EventArgs e)
+        {
+            if (TB_PassVerify.Text == "Nhập lại mật khẩu")
+            {
+                TB_PassVerify.Text = "";
+                TB_PassVerify.ForeColor = Color.Black;
+            }
+        }
+
+        private void TB_PassVerify_Leave(object sender, EventArgs e)
+        {
+            if (TB_PassVerify.Text == "")
+            {
+                TB_PassVerify.Text = "Nhập lại mật khẩu";
+                TB_PassVerify.ForeColor = Color.Silver;
+            }
+        }
+
+        private void TB_Code_Enter(object sender, EventArgs e)
+        {
+            if (TB_Code.Text == "CODE")
+            {
+                TB_Code.Text = "";
+                TB_Code.ForeColor = Color.Black;
+            }
+        }
+
+        private void TB_Code_Leave(object sender, EventArgs e)
+        {
+            if (TB_Code.Text == "")
+            {
+                TB_Code.Text = "CODE";
+                TB_Code.ForeColor = Color.Silver;
+            }
+        }
     }
 }
