@@ -19,6 +19,12 @@ namespace Hỗ_Trợ_GV
         }
         private bool SaveSchool()
         {
+
+            if (TB_MaTruong.TextLength > 10)
+            {
+                MessageBox.Show("Mã trường không hợp lệ (ít hơn 11 kí tự)");
+                return false;
+            }
             string query = "INSERT INTO Truong VALUES(@MaTruong, @TenTruong, @Luong1CaDay)";
             if (string.IsNullOrEmpty(TB_Luong1Ca.Text)) 
             {

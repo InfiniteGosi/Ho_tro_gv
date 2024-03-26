@@ -120,5 +120,12 @@ namespace Hỗ_Trợ_GV
         {
             DisplayShift();
         }
+
+        private void LB_shift_Click(object sender, EventArgs e)
+        {
+            TM_suaxoalich.Start();
+            SuaVaXoaLich suaVaXoa = new SuaVaXoaLich(ca, currentDate);
+            suaVaXoa.Show();
+        }
     }
 }

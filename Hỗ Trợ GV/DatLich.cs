@@ -184,6 +184,7 @@ namespace Hỗ_Trợ_GV
             if (SaveShift())
             { 
                 MessageBox.Show("Đã lưu ca dạy");
+                this.Close();
             }
             else
             {

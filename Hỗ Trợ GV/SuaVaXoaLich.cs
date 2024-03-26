@@ -216,6 +216,7 @@ namespace Hỗ_Trợ_GV
             if (UpdateShift())
             {
                 MessageBox.Show("Đã thay đổi ca dạy");
+                this.Close();
             }
             else
             {
@@ -260,6 +261,7 @@ namespace Hỗ_Trợ_GV
                 {
                     MessageBox.Show("Đã xóa ca dạy");
                     shiftDeleted = true;
+                    this.Close();
                 }
                 else
                 {
