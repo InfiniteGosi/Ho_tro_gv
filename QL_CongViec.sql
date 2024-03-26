@@ -52,7 +52,8 @@ delete from TaiKhoan where TenDangNhap = 'khangho150'
 
 insert into Truong values('TDTU', N'Đại học Tôn Đức Thắng', 150000)
 insert into Truong values('HMUS', N'Đại học khoa học tự nhiên TPHCM', 100000)
-select TenTruong from Truong
+select * from Truong
+delete from Truong 
 
 insert into MonHoc values('M001', N'Giải tích', 'TDTU')
 insert into MonHoc values('M002', N'Công nghệ phần mềm', 'TDTU')
@@ -62,6 +63,7 @@ insert into MonHoc values('C001', N'Giải tích 1', 'HMUS')
 insert into MonHoc values('C002', N'Lập trình web', 'HMUS')
 insert into MonHoc values('C003', N'Cấu trúc dữ liệu', 'HMUS')
 select * from MonHoc
+delete from MonHoc
 
 
 select * from CaHoc
