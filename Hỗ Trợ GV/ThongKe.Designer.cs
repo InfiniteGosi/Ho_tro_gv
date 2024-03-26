@@ -39,7 +39,6 @@ namespace Hỗ_Trợ_GV
             this.dTP_DenNgay = new System.Windows.Forms.DateTimePicker();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +67,7 @@ namespace Hỗ_Trợ_GV
             // 
             // BT_LoadThongKe
             // 
+            this.BT_LoadThongKe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BT_LoadThongKe.BackColor = System.Drawing.Color.Teal;
             this.BT_LoadThongKe.FlatAppearance.BorderSize = 0;
             this.BT_LoadThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -131,20 +131,12 @@ namespace Hỗ_Trợ_GV
             this.panel1.Size = new System.Drawing.Size(424, 40);
             this.panel1.TabIndex = 9;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.panel2.Location = new System.Drawing.Point(20, 77);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 508);
-            this.panel2.TabIndex = 9;
-            // 
             // ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1202, 583);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.BT_LoadThongKe);
@@ -168,6 +160,5 @@ namespace Hỗ_Trợ_GV
         private System.Windows.Forms.DateTimePicker dTP_DenNgay;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
     }
 }

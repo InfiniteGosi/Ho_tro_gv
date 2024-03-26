@@ -64,10 +64,10 @@
             this.TB_MK.Margin = new System.Windows.Forms.Padding(4);
             this.TB_MK.Multiline = true;
             this.TB_MK.Name = "TB_MK";
+            this.TB_MK.PasswordChar = '*';
             this.TB_MK.Size = new System.Drawing.Size(402, 28);
             this.TB_MK.TabIndex = 1;
             this.TB_MK.Text = "Mật khẩu";
-            this.TB_MK.UseSystemPasswordChar = true;
             this.TB_MK.Enter += new System.EventHandler(this.tb_MK_Enter);
             this.TB_MK.Leave += new System.EventHandler(this.tb_MK_Leave);
             // 
