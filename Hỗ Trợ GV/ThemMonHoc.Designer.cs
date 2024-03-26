@@ -49,7 +49,7 @@
             this.CB_Truong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CB_Truong.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Truong.FormattingEnabled = true;
-            this.CB_Truong.Location = new System.Drawing.Point(158, 287);
+            this.CB_Truong.Location = new System.Drawing.Point(158, 280);
             this.CB_Truong.Name = "CB_Truong";
             this.CB_Truong.Size = new System.Drawing.Size(344, 28);
             this.CB_Truong.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             this.TB_MaMon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TB_MaMon.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_MaMon.Location = new System.Drawing.Point(158, 103);
+            this.TB_MaMon.Location = new System.Drawing.Point(158, 96);
             this.TB_MaMon.Name = "TB_MaMon";
             this.TB_MaMon.Size = new System.Drawing.Size(164, 28);
             this.TB_MaMon.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             this.TB_TenMon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TB_TenMon.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TenMon.Location = new System.Drawing.Point(158, 195);
+            this.TB_TenMon.Location = new System.Drawing.Point(158, 188);
             this.TB_TenMon.Name = "TB_TenMon";
             this.TB_TenMon.Size = new System.Drawing.Size(344, 28);
             this.TB_TenMon.TabIndex = 2;
@@ -76,11 +76,11 @@
             // 
             this.LB_MaMon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_MaMon.AutoSize = true;
-            this.LB_MaMon.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_MaMon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_MaMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.LB_MaMon.Location = new System.Drawing.Point(32, 98);
             this.LB_MaMon.Name = "LB_MaMon";
-            this.LB_MaMon.Size = new System.Drawing.Size(64, 26);
+            this.LB_MaMon.Size = new System.Drawing.Size(83, 22);
             this.LB_MaMon.TabIndex = 3;
             this.LB_MaMon.Text = "Mã Môn:";
             // 
@@ -88,11 +88,11 @@
             // 
             this.LB_TenMon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_TenMon.AutoSize = true;
-            this.LB_TenMon.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_TenMon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_TenMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.LB_TenMon.Location = new System.Drawing.Point(32, 190);
             this.LB_TenMon.Name = "LB_TenMon";
-            this.LB_TenMon.Size = new System.Drawing.Size(94, 26);
+            this.LB_TenMon.Size = new System.Drawing.Size(125, 22);
             this.LB_TenMon.TabIndex = 4;
             this.LB_TenMon.Text = "Tên Môn Học:";
             // 
@@ -100,11 +100,11 @@
             // 
             this.LB_TenTruong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_TenTruong.AutoSize = true;
-            this.LB_TenTruong.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_TenTruong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_TenTruong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.LB_TenTruong.Location = new System.Drawing.Point(32, 282);
             this.LB_TenTruong.Name = "LB_TenTruong";
-            this.LB_TenTruong.Size = new System.Drawing.Size(83, 26);
+            this.LB_TenTruong.Size = new System.Drawing.Size(109, 22);
             this.LB_TenTruong.TabIndex = 5;
             this.LB_TenTruong.Text = "Tên Trường:";
             // 
@@ -145,11 +145,11 @@
             this.LB_FormThemMon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_FormThemMon.AutoSize = true;
             this.LB_FormThemMon.BackColor = System.Drawing.Color.Transparent;
-            this.LB_FormThemMon.Font = new System.Drawing.Font("GMV DIN Pro Cond", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_FormThemMon.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_FormThemMon.ForeColor = System.Drawing.Color.White;
-            this.LB_FormThemMon.Location = new System.Drawing.Point(-1, 0);
+            this.LB_FormThemMon.Location = new System.Drawing.Point(3, 5);
             this.LB_FormThemMon.Name = "LB_FormThemMon";
-            this.LB_FormThemMon.Size = new System.Drawing.Size(186, 43);
+            this.LB_FormThemMon.Size = new System.Drawing.Size(246, 32);
             this.LB_FormThemMon.TabIndex = 8;
             this.LB_FormThemMon.Text = "THÊM MÔN HỌC";
             // 

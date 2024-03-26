@@ -60,12 +60,10 @@
             // 
             // LB_xinchao
             // 
-            this.LB_xinchao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.LB_xinchao.AutoSize = true;
             this.LB_xinchao.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_xinchao.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.LB_xinchao.Location = new System.Drawing.Point(36, 9);
+            this.LB_xinchao.Location = new System.Drawing.Point(8, 9);
             this.LB_xinchao.Name = "LB_xinchao";
             this.LB_xinchao.Size = new System.Drawing.Size(60, 22);
             this.LB_xinchao.TabIndex = 3;
@@ -74,11 +72,12 @@
             // btn_dangxuat
             // 
             this.btn_dangxuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_dangxuat.AutoSize = true;
             this.btn_dangxuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_dangxuat.FlatAppearance.BorderSize = 3;
-            this.btn_dangxuat.Font = new System.Drawing.Font("GMV DIN Pro Cond", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dangxuat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dangxuat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_dangxuat.Location = new System.Drawing.Point(1115, 2);
+            this.btn_dangxuat.Location = new System.Drawing.Point(1117, 2);
             this.btn_dangxuat.Name = "btn_dangxuat";
             this.btn_dangxuat.Size = new System.Drawing.Size(97, 33);
             this.btn_dangxuat.TabIndex = 1;
@@ -89,9 +88,10 @@
             // btn_thongke
             // 
             this.btn_thongke.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_thongke.AutoSize = true;
             this.btn_thongke.FlatAppearance.BorderSize = 0;
             this.btn_thongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_thongke.Font = new System.Drawing.Font("GMV DIN Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thongke.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thongke.ForeColor = System.Drawing.Color.White;
             this.btn_thongke.Location = new System.Drawing.Point(982, -7);
             this.btn_thongke.Name = "btn_thongke";
@@ -107,7 +107,7 @@
             this.btn_tinhluong.AutoSize = true;
             this.btn_tinhluong.FlatAppearance.BorderSize = 0;
             this.btn_tinhluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_tinhluong.Font = new System.Drawing.Font("GMV DIN Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_tinhluong.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_tinhluong.ForeColor = System.Drawing.Color.White;
             this.btn_tinhluong.Location = new System.Drawing.Point(835, -8);
             this.btn_tinhluong.Name = "btn_tinhluong";
@@ -120,9 +120,10 @@
             // bnt_lichday
             // 
             this.bnt_lichday.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.bnt_lichday.AutoSize = true;
             this.bnt_lichday.FlatAppearance.BorderSize = 0;
             this.bnt_lichday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnt_lichday.Font = new System.Drawing.Font("GMV DIN Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_lichday.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_lichday.ForeColor = System.Drawing.Color.White;
             this.bnt_lichday.Location = new System.Drawing.Point(688, -7);
             this.bnt_lichday.Name = "bnt_lichday";
@@ -158,11 +159,11 @@
             // 
             this.lb_htgv.AutoSize = true;
             this.lb_htgv.BackColor = System.Drawing.Color.Transparent;
-            this.lb_htgv.Font = new System.Drawing.Font("GMV DIN Pro Cond", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_htgv.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_htgv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lb_htgv.Location = new System.Drawing.Point(2, -3);
+            this.lb_htgv.Location = new System.Drawing.Point(2, 0);
             this.lb_htgv.Name = "lb_htgv";
-            this.lb_htgv.Size = new System.Drawing.Size(174, 37);
+            this.lb_htgv.Size = new System.Drawing.Size(225, 32);
             this.lb_htgv.TabIndex = 0;
             this.lb_htgv.Text = "Hỗ trợ giảng viên";
             // 

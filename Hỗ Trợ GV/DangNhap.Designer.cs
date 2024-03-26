@@ -43,7 +43,7 @@
             // tb_Ten
             // 
             this.tb_Ten.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Ten.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Ten.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Ten.ForeColor = System.Drawing.Color.Silver;
             this.tb_Ten.Location = new System.Drawing.Point(53, 123);
             this.tb_Ten.Margin = new System.Windows.Forms.Padding(4);
@@ -58,7 +58,7 @@
             // TB_MK
             // 
             this.TB_MK.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TB_MK.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_MK.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_MK.ForeColor = System.Drawing.Color.Silver;
             this.TB_MK.Location = new System.Drawing.Point(53, 207);
             this.TB_MK.Margin = new System.Windows.Forms.Padding(4);
@@ -76,7 +76,7 @@
             this.BtnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(59)))), ((int)(((byte)(85)))));
             this.BtnDangNhap.FlatAppearance.BorderSize = 0;
             this.BtnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDangNhap.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDangNhap.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDangNhap.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.BtnDangNhap.Location = new System.Drawing.Point(0, 316);
             this.BtnDangNhap.Margin = new System.Windows.Forms.Padding(4);
@@ -92,7 +92,7 @@
             this.BtnDangKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(233)))), ((int)(((byte)(236)))));
             this.BtnDangKy.FlatAppearance.BorderSize = 0;
             this.BtnDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDangKy.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDangKy.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDangKy.ForeColor = System.Drawing.Color.Gray;
             this.BtnDangKy.Location = new System.Drawing.Point(250, 316);
             this.BtnDangKy.Margin = new System.Windows.Forms.Padding(4);
@@ -106,13 +106,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("GMV DIN Pro Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Coral;
-            this.label3.Location = new System.Drawing.Point(53, 32);
+            this.label3.Location = new System.Drawing.Point(28, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(251, 37);
+            this.label3.Size = new System.Drawing.Size(446, 32);
             this.label3.TabIndex = 6;
-            this.label3.Text = "CÔNG CỤ HỖ TRỢ GIÁO VIÊN";
+            this.label3.Text = "PHẦN MỀM HỖ TRỢ GIÁO VIÊN";
             // 
             // panel1
             // 
