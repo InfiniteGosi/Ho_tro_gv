@@ -226,10 +226,10 @@ namespace Hỗ_Trợ_GV
             // LB_weekinterval
             // 
             this.LB_weekinterval.AutoSize = true;
-            this.LB_weekinterval.Font = new System.Drawing.Font("GMV DIN Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_weekinterval.Location = new System.Drawing.Point(1213, 674);
+            this.LB_weekinterval.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_weekinterval.Location = new System.Drawing.Point(1213, 677);
             this.LB_weekinterval.Name = "LB_weekinterval";
-            this.LB_weekinterval.Size = new System.Drawing.Size(75, 31);
+            this.LB_weekinterval.Size = new System.Drawing.Size(82, 27);
             this.LB_weekinterval.TabIndex = 15;
             this.LB_weekinterval.Text = "label13";
             // 
