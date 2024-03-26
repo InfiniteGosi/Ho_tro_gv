@@ -307,5 +307,15 @@ namespace Hỗ_Trợ_GV
                     CB_color.ForeColor, TextFormatFlags.Left | TextFormatFlags.VerticalCenter);
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

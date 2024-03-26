@@ -38,42 +38,54 @@ namespace Hỗ_Trợ_GV
             this.dTP_TuNgay = new System.Windows.Forms.DateTimePicker();
             this.dTP_DenNgay = new System.Windows.Forms.DateTimePicker();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LB_From
             // 
             this.LB_From.AutoSize = true;
-            this.LB_From.Location = new System.Drawing.Point(40, 30);
+            this.LB_From.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_From.ForeColor = System.Drawing.Color.White;
+            this.LB_From.Location = new System.Drawing.Point(25, 6);
             this.LB_From.Name = "LB_From";
-            this.LB_From.Size = new System.Drawing.Size(56, 16);
+            this.LB_From.Size = new System.Drawing.Size(63, 26);
             this.LB_From.TabIndex = 3;
-            this.LB_From.Text = "Từ ngày";
+            this.LB_From.Text = "Từ ngày:";
             // 
             // LB_To
             // 
             this.LB_To.AutoSize = true;
-            this.LB_To.Location = new System.Drawing.Point(289, 30);
+            this.LB_To.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_To.ForeColor = System.Drawing.Color.White;
+            this.LB_To.Location = new System.Drawing.Point(235, 6);
             this.LB_To.Name = "LB_To";
-            this.LB_To.Size = new System.Drawing.Size(64, 16);
+            this.LB_To.Size = new System.Drawing.Size(71, 26);
             this.LB_To.TabIndex = 4;
-            this.LB_To.Text = "Đến ngày";
+            this.LB_To.Text = "Đến ngày:";
             // 
             // BT_LoadThongKe
             // 
-            this.BT_LoadThongKe.Location = new System.Drawing.Point(568, 27);
+            this.BT_LoadThongKe.BackColor = System.Drawing.Color.Teal;
+            this.BT_LoadThongKe.FlatAppearance.BorderSize = 0;
+            this.BT_LoadThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_LoadThongKe.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_LoadThongKe.ForeColor = System.Drawing.Color.White;
+            this.BT_LoadThongKe.Location = new System.Drawing.Point(1025, 36);
             this.BT_LoadThongKe.Name = "BT_LoadThongKe";
-            this.BT_LoadThongKe.Size = new System.Drawing.Size(143, 23);
+            this.BT_LoadThongKe.Size = new System.Drawing.Size(137, 45);
             this.BT_LoadThongKe.TabIndex = 5;
             this.BT_LoadThongKe.Text = "Thống Kê";
-            this.BT_LoadThongKe.UseVisualStyleBackColor = true;
+            this.BT_LoadThongKe.UseVisualStyleBackColor = false;
             this.BT_LoadThongKe.Click += new System.EventHandler(this.BT_LoadThongKe_Click);
             // 
             // dTP_TuNgay
             // 
             this.dTP_TuNgay.CustomFormat = "yyyy-MM-dd";
             this.dTP_TuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dTP_TuNgay.Location = new System.Drawing.Point(122, 30);
+            this.dTP_TuNgay.Location = new System.Drawing.Point(94, 9);
             this.dTP_TuNgay.Name = "dTP_TuNgay";
             this.dTP_TuNgay.Size = new System.Drawing.Size(96, 22);
             this.dTP_TuNgay.TabIndex = 6;
@@ -82,7 +94,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.dTP_DenNgay.CustomFormat = "yyyy-MM-dd";
             this.dTP_DenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dTP_DenNgay.Location = new System.Drawing.Point(371, 30);
+            this.dTP_DenNgay.Location = new System.Drawing.Point(312, 9);
             this.dTP_DenNgay.Name = "dTP_DenNgay";
             this.dTP_DenNgay.Size = new System.Drawing.Size(97, 22);
             this.dTP_DenNgay.TabIndex = 7;
@@ -96,7 +108,7 @@ namespace Hỗ_Trợ_GV
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(43, 92);
+            this.chart1.Location = new System.Drawing.Point(40, 92);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -107,25 +119,44 @@ namespace Hỗ_Trợ_GV
             this.chart1.Text = "chart1";
             this.chart1.Visible = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.panel1.Controls.Add(this.dTP_TuNgay);
+            this.panel1.Controls.Add(this.LB_From);
+            this.panel1.Controls.Add(this.dTP_DenNgay);
+            this.panel1.Controls.Add(this.LB_To);
+            this.panel1.Location = new System.Drawing.Point(20, 37);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(424, 40);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.panel2.Location = new System.Drawing.Point(20, 77);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(10, 508);
+            this.panel2.TabIndex = 9;
+            // 
             // ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1202, 583);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.chart1);
-            this.Controls.Add(this.dTP_DenNgay);
-            this.Controls.Add(this.dTP_TuNgay);
             this.Controls.Add(this.BT_LoadThongKe);
-            this.Controls.Add(this.LB_To);
-            this.Controls.Add(this.LB_From);
             this.Name = "ThongKe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThongKe";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ThongKe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -136,5 +167,7 @@ namespace Hỗ_Trợ_GV
         private System.Windows.Forms.DateTimePicker dTP_TuNgay;
         private System.Windows.Forms.DateTimePicker dTP_DenNgay;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

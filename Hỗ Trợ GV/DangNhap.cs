@@ -142,5 +142,41 @@ namespace Hỗ_Trợ_GV
                 MessageBox.Show("Mật khẩu hoặc tên đăng nhập không đúng");
             }
         }
+
+        private void tb_Ten_Enter(object sender, EventArgs e)
+        {
+            if(tb_Ten.Text == "Tài khoản")
+            {
+                tb_Ten.Text = "";
+                tb_Ten.ForeColor = Color.Black;
+            }
+        }
+
+        private void tb_Ten_Leave(object sender, EventArgs e)
+        {
+            if (tb_Ten.Text == "")
+            {
+                tb_Ten.Text = "Tài khoản";
+                tb_Ten.ForeColor = Color.Silver;
+            }
+        }
+
+        private void tb_MK_Enter(object sender, EventArgs e)
+        {
+            if (TB_MK.Text == "Mật khẩu")
+            {
+                TB_MK.Text = "";
+                TB_MK.ForeColor = Color.Black;
+            }
+        }
+
+        private void tb_MK_Leave(object sender, EventArgs e)
+        {
+            if (TB_MK.Text == "")
+            {
+                TB_MK.Text = "Mật khẩu";
+                TB_MK.ForeColor = Color.Silver;
+            }
+        }
     }
 }
