@@ -63,7 +63,7 @@ namespace Hỗ_Trợ_GV
             // 
             // FLP_shiftcontainer
             // 
-            this.FLP_shiftcontainer.Location = new System.Drawing.Point(116, 115);
+            this.FLP_shiftcontainer.Location = new System.Drawing.Point(169, 115);
             this.FLP_shiftcontainer.Name = "FLP_shiftcontainer";
             this.FLP_shiftcontainer.Size = new System.Drawing.Size(1394, 534);
             this.FLP_shiftcontainer.TabIndex = 0;
@@ -71,7 +71,7 @@ namespace Hỗ_Trợ_GV
             // Btn_tuansau
             // 
             this.Btn_tuansau.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_tuansau.Location = new System.Drawing.Point(1411, 672);
+            this.Btn_tuansau.Location = new System.Drawing.Point(1465, 672);
             this.Btn_tuansau.Name = "Btn_tuansau";
             this.Btn_tuansau.Size = new System.Drawing.Size(98, 36);
             this.Btn_tuansau.TabIndex = 1;
@@ -82,7 +82,7 @@ namespace Hỗ_Trợ_GV
             // Btn_tuantruoc
             // 
             this.Btn_tuantruoc.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_tuantruoc.Location = new System.Drawing.Point(1084, 672);
+            this.Btn_tuantruoc.Location = new System.Drawing.Point(1099, 672);
             this.Btn_tuantruoc.Name = "Btn_tuantruoc";
             this.Btn_tuantruoc.Size = new System.Drawing.Size(98, 36);
             this.Btn_tuantruoc.TabIndex = 2;
@@ -96,7 +96,7 @@ namespace Hỗ_Trợ_GV
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label1.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(182, 29);
+            this.label1.Location = new System.Drawing.Point(235, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 26);
             this.label1.TabIndex = 3;
@@ -108,7 +108,7 @@ namespace Hỗ_Trợ_GV
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label2.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(377, 29);
+            this.label2.Location = new System.Drawing.Point(430, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 26);
             this.label2.TabIndex = 4;
@@ -120,7 +120,7 @@ namespace Hỗ_Trợ_GV
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label3.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(753, 29);
+            this.label3.Location = new System.Drawing.Point(806, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 26);
             this.label3.TabIndex = 6;
@@ -132,7 +132,7 @@ namespace Hỗ_Trợ_GV
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label4.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(568, 29);
+            this.label4.Location = new System.Drawing.Point(621, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 26);
             this.label4.TabIndex = 5;
@@ -144,7 +144,7 @@ namespace Hỗ_Trợ_GV
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label5.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(1160, 29);
+            this.label5.Location = new System.Drawing.Point(1213, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 26);
             this.label5.TabIndex = 8;
@@ -156,7 +156,7 @@ namespace Hỗ_Trợ_GV
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label6.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(960, 29);
+            this.label6.Location = new System.Drawing.Point(1013, 29);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 26);
             this.label6.TabIndex = 7;
@@ -168,7 +168,7 @@ namespace Hỗ_Trợ_GV
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label7.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(1360, 29);
+            this.label7.Location = new System.Drawing.Point(1413, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 26);
             this.label7.TabIndex = 9;
@@ -180,7 +180,7 @@ namespace Hỗ_Trợ_GV
             this.LB_Ca1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.LB_Ca1.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Ca1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.LB_Ca1.Location = new System.Drawing.Point(26, 143);
+            this.LB_Ca1.Location = new System.Drawing.Point(10, 138);
             this.LB_Ca1.Name = "LB_Ca1";
             this.LB_Ca1.Size = new System.Drawing.Size(42, 26);
             this.LB_Ca1.TabIndex = 10;
@@ -192,7 +192,7 @@ namespace Hỗ_Trợ_GV
             this.LB_Ca2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.LB_Ca2.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Ca2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.LB_Ca2.Location = new System.Drawing.Point(26, 272);
+            this.LB_Ca2.Location = new System.Drawing.Point(10, 267);
             this.LB_Ca2.Name = "LB_Ca2";
             this.LB_Ca2.Size = new System.Drawing.Size(42, 26);
             this.LB_Ca2.TabIndex = 11;
@@ -204,7 +204,7 @@ namespace Hỗ_Trợ_GV
             this.LB_Ca4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.LB_Ca4.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Ca4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.LB_Ca4.Location = new System.Drawing.Point(26, 530);
+            this.LB_Ca4.Location = new System.Drawing.Point(10, 525);
             this.LB_Ca4.Name = "LB_Ca4";
             this.LB_Ca4.Size = new System.Drawing.Size(42, 26);
             this.LB_Ca4.TabIndex = 13;
@@ -216,7 +216,7 @@ namespace Hỗ_Trợ_GV
             this.LB_Ca3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.LB_Ca3.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Ca3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.LB_Ca3.Location = new System.Drawing.Point(26, 401);
+            this.LB_Ca3.Location = new System.Drawing.Point(10, 396);
             this.LB_Ca3.Name = "LB_Ca3";
             this.LB_Ca3.Size = new System.Drawing.Size(42, 26);
             this.LB_Ca3.TabIndex = 12;
@@ -226,9 +226,9 @@ namespace Hỗ_Trợ_GV
             // 
             this.LB_weekinterval.AutoSize = true;
             this.LB_weekinterval.Font = new System.Drawing.Font("GMV DIN Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_weekinterval.Location = new System.Drawing.Point(1188, 675);
+            this.LB_weekinterval.Location = new System.Drawing.Point(1207, 677);
             this.LB_weekinterval.Name = "LB_weekinterval";
-            this.LB_weekinterval.Size = new System.Drawing.Size(70, 30);
+            this.LB_weekinterval.Size = new System.Drawing.Size(75, 31);
             this.LB_weekinterval.TabIndex = 15;
             this.LB_weekinterval.Text = "label13";
             // 
@@ -311,7 +311,9 @@ namespace Hỗ_Trợ_GV
             // 
             // MC_chonngay
             // 
-            this.MC_chonngay.Location = new System.Drawing.Point(1554, 123);
+            this.MC_chonngay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MC_chonngay.Location = new System.Drawing.Point(1600, 115);
             this.MC_chonngay.Name = "MC_chonngay";
             this.MC_chonngay.TabIndex = 23;
             this.MC_chonngay.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.MC_chonngay_DateChanged);
@@ -319,7 +321,7 @@ namespace Hỗ_Trợ_GV
             // BTN_homnay
             // 
             this.BTN_homnay.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_homnay.Location = new System.Drawing.Point(1641, 342);
+            this.BTN_homnay.Location = new System.Drawing.Point(1688, 334);
             this.BTN_homnay.Name = "BTN_homnay";
             this.BTN_homnay.Size = new System.Drawing.Size(99, 46);
             this.BTN_homnay.TabIndex = 24;
@@ -334,9 +336,9 @@ namespace Hỗ_Trợ_GV
             this.panel1.Controls.Add(this.LB_Ca2);
             this.panel1.Controls.Add(this.LB_Ca3);
             this.panel1.Controls.Add(this.LB_Ca4);
-            this.panel1.Location = new System.Drawing.Point(13, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(97, 651);
+            this.panel1.Size = new System.Drawing.Size(151, 651);
             this.panel1.TabIndex = 25;
             // 
             // panel2
@@ -349,7 +351,7 @@ namespace Hỗ_Trợ_GV
             this.panel2.Controls.Add(this.LB_d5);
             this.panel2.Controls.Add(this.LB_d3);
             this.panel2.Controls.Add(this.LB_d4);
-            this.panel2.Location = new System.Drawing.Point(83, 12);
+            this.panel2.Location = new System.Drawing.Point(136, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1439, 97);
             this.panel2.TabIndex = 26;
@@ -357,7 +359,7 @@ namespace Hỗ_Trợ_GV
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.panel3.Location = new System.Drawing.Point(108, 658);
+            this.panel3.Location = new System.Drawing.Point(161, 658);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1411, 5);
             this.panel3.TabIndex = 27;
@@ -365,7 +367,7 @@ namespace Hỗ_Trợ_GV
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.panel4.Location = new System.Drawing.Point(1517, 106);
+            this.panel4.Location = new System.Drawing.Point(1569, 106);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 557);
             this.panel4.TabIndex = 28;
@@ -374,11 +376,11 @@ namespace Hỗ_Trợ_GV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1846, 873);
+            this.ClientSize = new System.Drawing.Size(1886, 873);
+            this.Controls.Add(this.MC_chonngay);
+            this.Controls.Add(this.BTN_homnay);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.BTN_homnay);
-            this.Controls.Add(this.MC_chonngay);
             this.Controls.Add(this.LB_weekinterval);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);

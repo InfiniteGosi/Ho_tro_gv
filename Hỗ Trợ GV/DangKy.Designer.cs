@@ -153,10 +153,10 @@ namespace Hỗ_Trợ_GV
             this.TB_PassVerify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_PassVerify.Multiline = true;
             this.TB_PassVerify.Name = "TB_PassVerify";
+            this.TB_PassVerify.PasswordChar = '*';
             this.TB_PassVerify.Size = new System.Drawing.Size(402, 22);
             this.TB_PassVerify.TabIndex = 5;
             this.TB_PassVerify.Text = "Nhập lại mật khẩu";
-            this.TB_PassVerify.UseSystemPasswordChar = true;
             this.TB_PassVerify.Enter += new System.EventHandler(this.TB_PassVerify_Enter);
             this.TB_PassVerify.Leave += new System.EventHandler(this.TB_PassVerify_Leave);
             // 
@@ -179,10 +179,10 @@ namespace Hỗ_Trợ_GV
             this.TB_Pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_Pass.Multiline = true;
             this.TB_Pass.Name = "TB_Pass";
+            this.TB_Pass.PasswordChar = '*';
             this.TB_Pass.Size = new System.Drawing.Size(402, 22);
             this.TB_Pass.TabIndex = 3;
             this.TB_Pass.Text = "Mật khẩu";
-            this.TB_Pass.UseSystemPasswordChar = true;
             this.TB_Pass.Enter += new System.EventHandler(this.TB_Pass_Enter);
             this.TB_Pass.Leave += new System.EventHandler(this.TB_Pass_Leave);
             // 

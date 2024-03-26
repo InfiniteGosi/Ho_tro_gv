@@ -88,10 +88,12 @@
             // 
             // btn_thongke
             // 
+            this.btn_thongke.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_thongke.FlatAppearance.BorderSize = 0;
             this.btn_thongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_thongke.Font = new System.Drawing.Font("GMV DIN Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thongke.ForeColor = System.Drawing.Color.White;
-            this.btn_thongke.Location = new System.Drawing.Point(983, -7);
+            this.btn_thongke.Location = new System.Drawing.Point(982, -7);
             this.btn_thongke.Name = "btn_thongke";
             this.btn_thongke.Size = new System.Drawing.Size(126, 52);
             this.btn_thongke.TabIndex = 2;
@@ -101,10 +103,13 @@
             // 
             // btn_tinhluong
             // 
+            this.btn_tinhluong.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_tinhluong.AutoSize = true;
+            this.btn_tinhluong.FlatAppearance.BorderSize = 0;
             this.btn_tinhluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_tinhluong.Font = new System.Drawing.Font("GMV DIN Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_tinhluong.ForeColor = System.Drawing.Color.White;
-            this.btn_tinhluong.Location = new System.Drawing.Point(858, -8);
+            this.btn_tinhluong.Location = new System.Drawing.Point(835, -8);
             this.btn_tinhluong.Name = "btn_tinhluong";
             this.btn_tinhluong.Size = new System.Drawing.Size(126, 52);
             this.btn_tinhluong.TabIndex = 1;
@@ -114,10 +119,12 @@
             // 
             // bnt_lichday
             // 
+            this.bnt_lichday.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.bnt_lichday.FlatAppearance.BorderSize = 0;
             this.bnt_lichday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnt_lichday.Font = new System.Drawing.Font("GMV DIN Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_lichday.ForeColor = System.Drawing.Color.White;
-            this.bnt_lichday.Location = new System.Drawing.Point(733, -7);
+            this.bnt_lichday.Location = new System.Drawing.Point(688, -7);
             this.bnt_lichday.Name = "bnt_lichday";
             this.bnt_lichday.Size = new System.Drawing.Size(126, 52);
             this.bnt_lichday.TabIndex = 0;
@@ -131,6 +138,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_main.BackColor = System.Drawing.Color.Gainsboro;
+            this.pn_main.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pn_main.Location = new System.Drawing.Point(0, 73);
             this.pn_main.Name = "pn_main";
             this.pn_main.Size = new System.Drawing.Size(1220, 638);

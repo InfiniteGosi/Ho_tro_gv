@@ -39,8 +39,6 @@ namespace Hỗ_Trợ_GV
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_TinhLuong)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -150,7 +148,7 @@ namespace Hỗ_Trợ_GV
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.panel2.Location = new System.Drawing.Point(38, 75);
+            this.panel2.Location = new System.Drawing.Point(38, 74);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(2, 475);
             this.panel2.TabIndex = 8;
@@ -160,28 +158,10 @@ namespace Hỗ_Trợ_GV
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.panel3.Location = new System.Drawing.Point(38, 550);
+            this.panel3.Location = new System.Drawing.Point(38, 549);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1128, 2);
             this.panel3.TabIndex = 9;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.panel4.Location = new System.Drawing.Point(1164, 35);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2, 517);
-            this.panel4.TabIndex = 9;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.panel5.Location = new System.Drawing.Point(1137, 35);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(29, 2);
-            this.panel5.TabIndex = 10;
             // 
             // TinhLuong
             // 
@@ -189,8 +169,6 @@ namespace Hỗ_Trợ_GV
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1202, 583);
             this.Controls.Add(this.BT_LoadData);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -219,7 +197,5 @@ namespace Hỗ_Trợ_GV
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
     }
 }

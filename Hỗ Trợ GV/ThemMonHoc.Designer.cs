@@ -116,9 +116,9 @@
             this.BT_ThemTruong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_ThemTruong.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_ThemTruong.ForeColor = System.Drawing.Color.White;
-            this.BT_ThemTruong.Location = new System.Drawing.Point(327, 363);
+            this.BT_ThemTruong.Location = new System.Drawing.Point(300, 363);
             this.BT_ThemTruong.Name = "BT_ThemTruong";
-            this.BT_ThemTruong.Size = new System.Drawing.Size(110, 43);
+            this.BT_ThemTruong.Size = new System.Drawing.Size(137, 43);
             this.BT_ThemTruong.TabIndex = 6;
             this.BT_ThemTruong.Text = "Thêm Trường";
             this.BT_ThemTruong.UseVisualStyleBackColor = false;

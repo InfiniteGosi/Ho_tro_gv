@@ -72,7 +72,7 @@
             this.LB_shiftinfo.AutoSize = true;
             this.LB_shiftinfo.Font = new System.Drawing.Font("GMV DIN Pro Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_shiftinfo.ForeColor = System.Drawing.Color.White;
-            this.LB_shiftinfo.Location = new System.Drawing.Point(185, 6);
+            this.LB_shiftinfo.Location = new System.Drawing.Point(3, 5);
             this.LB_shiftinfo.Name = "LB_shiftinfo";
             this.LB_shiftinfo.Size = new System.Drawing.Size(59, 31);
             this.LB_shiftinfo.TabIndex = 2;
@@ -86,7 +86,7 @@
             this.BT_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_save.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_save.ForeColor = System.Drawing.Color.White;
-            this.BT_save.Location = new System.Drawing.Point(345, 395);
+            this.BT_save.Location = new System.Drawing.Point(344, 395);
             this.BT_save.Name = "BT_save";
             this.BT_save.Size = new System.Drawing.Size(91, 43);
             this.BT_save.TabIndex = 3;
@@ -126,9 +126,9 @@
             this.BT_AddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_AddSubject.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_AddSubject.ForeColor = System.Drawing.Color.White;
-            this.BT_AddSubject.Location = new System.Drawing.Point(132, 395);
+            this.BT_AddSubject.Location = new System.Drawing.Point(12, 395);
             this.BT_AddSubject.Name = "BT_AddSubject";
-            this.BT_AddSubject.Size = new System.Drawing.Size(91, 43);
+            this.BT_AddSubject.Size = new System.Drawing.Size(137, 43);
             this.BT_AddSubject.TabIndex = 6;
             this.BT_AddSubject.Text = "Thêm Môn";
             this.BT_AddSubject.UseVisualStyleBackColor = false;
@@ -142,9 +142,9 @@
             this.BT_ThemTruong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_ThemTruong.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_ThemTruong.ForeColor = System.Drawing.Color.White;
-            this.BT_ThemTruong.Location = new System.Drawing.Point(229, 395);
+            this.BT_ThemTruong.Location = new System.Drawing.Point(178, 395);
             this.BT_ThemTruong.Name = "BT_ThemTruong";
-            this.BT_ThemTruong.Size = new System.Drawing.Size(110, 43);
+            this.BT_ThemTruong.Size = new System.Drawing.Size(137, 43);
             this.BT_ThemTruong.TabIndex = 7;
             this.BT_ThemTruong.Text = "Thêm Trường";
             this.BT_ThemTruong.UseVisualStyleBackColor = false;
