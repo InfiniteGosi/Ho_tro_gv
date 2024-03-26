@@ -48,11 +48,11 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("GMV DIN Pro Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label2.Location = new System.Drawing.Point(35, 180);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 31);
+            this.label2.Size = new System.Drawing.Size(109, 27);
             this.label2.TabIndex = 11;
             this.label2.Text = "Môn Học:";
             // 
@@ -60,11 +60,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("GMV DIN Pro Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label1.Location = new System.Drawing.Point(35, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 31);
+            this.label1.Size = new System.Drawing.Size(88, 27);
             this.label1.TabIndex = 10;
             this.label1.Text = "Trường:";
             // 
@@ -88,11 +88,11 @@
             // 
             this.LB_shiftinfo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LB_shiftinfo.AutoSize = true;
-            this.LB_shiftinfo.Font = new System.Drawing.Font("GMV DIN Pro Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_shiftinfo.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_shiftinfo.ForeColor = System.Drawing.Color.White;
-            this.LB_shiftinfo.Location = new System.Drawing.Point(185, 6);
+            this.LB_shiftinfo.Location = new System.Drawing.Point(3, 8);
             this.LB_shiftinfo.Name = "LB_shiftinfo";
-            this.LB_shiftinfo.Size = new System.Drawing.Size(59, 31);
+            this.LB_shiftinfo.Size = new System.Drawing.Size(70, 27);
             this.LB_shiftinfo.TabIndex = 8;
             this.LB_shiftinfo.Text = "label1";
             // 
@@ -137,11 +137,11 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("GMV DIN Pro Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.label3.Location = new System.Drawing.Point(35, 271);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 31);
+            this.label3.Size = new System.Drawing.Size(62, 27);
             this.label3.TabIndex = 14;
             this.label3.Text = "Màu:";
             // 

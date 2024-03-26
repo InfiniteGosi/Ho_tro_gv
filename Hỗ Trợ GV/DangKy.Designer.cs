@@ -85,11 +85,11 @@ namespace Hỗ_Trợ_GV
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("GMV DIN Pro Cond", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label4.Location = new System.Drawing.Point(29, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(178, 43);
+            this.label4.Size = new System.Drawing.Size(300, 39);
             this.label4.TabIndex = 11;
             this.label4.Text = "TRANG ĐĂNG KÝ";
             // 
@@ -122,7 +122,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.TB_Code.BackColor = System.Drawing.Color.White;
             this.TB_Code.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TB_Code.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Code.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_Code.ForeColor = System.Drawing.Color.Silver;
             this.TB_Code.Location = new System.Drawing.Point(37, 406);
             this.TB_Code.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -147,7 +147,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.TB_PassVerify.BackColor = System.Drawing.Color.White;
             this.TB_PassVerify.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TB_PassVerify.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_PassVerify.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_PassVerify.ForeColor = System.Drawing.Color.Silver;
             this.TB_PassVerify.Location = new System.Drawing.Point(37, 304);
             this.TB_PassVerify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -173,7 +173,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.TB_Pass.BackColor = System.Drawing.Color.White;
             this.TB_Pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TB_Pass.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Pass.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_Pass.ForeColor = System.Drawing.Color.Silver;
             this.TB_Pass.Location = new System.Drawing.Point(37, 202);
             this.TB_Pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -199,7 +199,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.TB_NhapEmail.BackColor = System.Drawing.Color.White;
             this.TB_NhapEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TB_NhapEmail.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_NhapEmail.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_NhapEmail.ForeColor = System.Drawing.Color.Silver;
             this.TB_NhapEmail.Location = new System.Drawing.Point(37, 100);
             this.TB_NhapEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -37,8 +37,6 @@ namespace Hỗ_Trợ_GV
             this.LB_TuNgay = new System.Windows.Forms.Label();
             this.LB_DenNgay = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_TinhLuong)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -51,12 +49,12 @@ namespace Hỗ_Trợ_GV
             this.dataGV_TinhLuong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGV_TinhLuong.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGV_TinhLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGV_TinhLuong.Location = new System.Drawing.Point(55, 86);
+            this.dataGV_TinhLuong.Location = new System.Drawing.Point(38, 86);
             this.dataGV_TinhLuong.Name = "dataGV_TinhLuong";
             this.dataGV_TinhLuong.ReadOnly = true;
             this.dataGV_TinhLuong.RowHeadersWidth = 51;
             this.dataGV_TinhLuong.RowTemplate.Height = 24;
-            this.dataGV_TinhLuong.Size = new System.Drawing.Size(1093, 449);
+            this.dataGV_TinhLuong.Size = new System.Drawing.Size(1110, 468);
             this.dataGV_TinhLuong.TabIndex = 0;
             // 
             // BT_LoadData
@@ -95,7 +93,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.dTP_TuNgay.CustomFormat = "yyyy-MM-dd";
             this.dTP_TuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dTP_TuNgay.Location = new System.Drawing.Point(96, 8);
+            this.dTP_TuNgay.Location = new System.Drawing.Point(96, 9);
             this.dTP_TuNgay.Name = "dTP_TuNgay";
             this.dTP_TuNgay.Size = new System.Drawing.Size(116, 22);
             this.dTP_TuNgay.TabIndex = 3;
@@ -104,7 +102,7 @@ namespace Hỗ_Trợ_GV
             // 
             this.dTP_DenNgay.CustomFormat = "yyyy-MM-dd";
             this.dTP_DenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dTP_DenNgay.Location = new System.Drawing.Point(329, 8);
+            this.dTP_DenNgay.Location = new System.Drawing.Point(329, 9);
             this.dTP_DenNgay.Name = "dTP_DenNgay";
             this.dTP_DenNgay.Size = new System.Drawing.Size(116, 22);
             this.dTP_DenNgay.TabIndex = 4;
@@ -112,22 +110,22 @@ namespace Hỗ_Trợ_GV
             // LB_TuNgay
             // 
             this.LB_TuNgay.AutoSize = true;
-            this.LB_TuNgay.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_TuNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_TuNgay.ForeColor = System.Drawing.Color.White;
-            this.LB_TuNgay.Location = new System.Drawing.Point(27, 5);
+            this.LB_TuNgay.Location = new System.Drawing.Point(9, 8);
             this.LB_TuNgay.Name = "LB_TuNgay";
-            this.LB_TuNgay.Size = new System.Drawing.Size(63, 26);
+            this.LB_TuNgay.Size = new System.Drawing.Size(80, 22);
             this.LB_TuNgay.TabIndex = 5;
             this.LB_TuNgay.Text = "Từ ngày:";
             // 
             // LB_DenNgay
             // 
             this.LB_DenNgay.AutoSize = true;
-            this.LB_DenNgay.Font = new System.Drawing.Font("GMV DIN Pro Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_DenNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_DenNgay.ForeColor = System.Drawing.Color.White;
-            this.LB_DenNgay.Location = new System.Drawing.Point(252, 5);
+            this.LB_DenNgay.Location = new System.Drawing.Point(234, 8);
             this.LB_DenNgay.Name = "LB_DenNgay";
-            this.LB_DenNgay.Size = new System.Drawing.Size(71, 26);
+            this.LB_DenNgay.Size = new System.Drawing.Size(89, 22);
             this.LB_DenNgay.TabIndex = 6;
             this.LB_DenNgay.Text = "Đến ngày:";
             // 
@@ -143,34 +141,12 @@ namespace Hỗ_Trợ_GV
             this.panel1.Size = new System.Drawing.Size(456, 40);
             this.panel1.TabIndex = 7;
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.panel2.Location = new System.Drawing.Point(38, 74);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2, 475);
-            this.panel2.TabIndex = 8;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.panel3.Location = new System.Drawing.Point(38, 549);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1128, 2);
-            this.panel3.TabIndex = 9;
-            // 
             // TinhLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1202, 583);
             this.Controls.Add(this.BT_LoadData);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BT_ExportExcel);
             this.Controls.Add(this.dataGV_TinhLuong);
@@ -195,7 +171,5 @@ namespace Hỗ_Trợ_GV
         private System.Windows.Forms.Label LB_TuNgay;
         private System.Windows.Forms.Label LB_DenNgay;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
     }
 }
