@@ -89,7 +89,7 @@ namespace Hỗ_Trợ_GV
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label4.Location = new System.Drawing.Point(29, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(300, 39);
+            this.label4.Size = new System.Drawing.Size(289, 37);
             this.label4.TabIndex = 11;
             this.label4.Text = "TRANG ĐĂNG KÝ";
             // 
@@ -98,7 +98,7 @@ namespace Hỗ_Trợ_GV
             this.btn_Register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(59)))), ((int)(((byte)(85)))));
             this.btn_Register.FlatAppearance.BorderSize = 0;
             this.btn_Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Register.Font = new System.Drawing.Font("GMV DIN Pro Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Register.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btn_Register.Location = new System.Drawing.Point(0, 506);
             this.btn_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -153,7 +153,6 @@ namespace Hỗ_Trợ_GV
             this.TB_PassVerify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_PassVerify.Multiline = true;
             this.TB_PassVerify.Name = "TB_PassVerify";
-            this.TB_PassVerify.PasswordChar = '*';
             this.TB_PassVerify.Size = new System.Drawing.Size(402, 22);
             this.TB_PassVerify.TabIndex = 5;
             this.TB_PassVerify.Text = "Nhập lại mật khẩu";
@@ -179,7 +178,6 @@ namespace Hỗ_Trợ_GV
             this.TB_Pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_Pass.Multiline = true;
             this.TB_Pass.Name = "TB_Pass";
-            this.TB_Pass.PasswordChar = '*';
             this.TB_Pass.Size = new System.Drawing.Size(402, 22);
             this.TB_Pass.TabIndex = 3;
             this.TB_Pass.Text = "Mật khẩu";
